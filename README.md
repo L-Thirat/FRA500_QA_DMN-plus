@@ -59,10 +59,11 @@ Below are the full results for each bAbI task (tasks where both implementations 
 
 --Improve Solution--
 DMN+ for Thai language
-## All of my Source code are in "FRA500_QA_DMN-plus/addition_fuse/"
+## All of my Source code are in https://github.com/few2005few/FRA500_QA_DMN-plus/tree/master/addition_fuse
 
 ## Data set
 bAbI dataset (Task 1,2,5,6,10,12,14,17)
+โดย dataset ที่เราแปลแล้วสามารถเข้าไปดูได้ใน https://github.com/few2005few/FRA500_QA_DMN-plus/tree/master/data_translate
 
 ## Translation
 สำหรับการแปลงข้อมูล bAbI dataset จากภาษาอังกฤษเป็นภาษาไทย เราเลือกใช้ googletrans package ซึ่งทำหน้าที่ดึง API จาก Google Translation มาใช้ ซึ่งภายในโค้ดนี้เราได้เลือกโค้ดที่สามารถแก้เรื่องจำกัดลิมิตในการแปลได้ ทำให้เราสามารถแปลงข้อมูล bAbI dataset พร้อมๆกันได้ แต่เนื่องจากการจะแปลงข้อมูล bAbI dataset นั้นเราต้องการที่จะตัดข้อความในส่วนของคำถาม กับคำตอบให้แยกออกจากกัน เพื่อให้ google translate ตัวนี้ ไม่สับสนในการแปลข้อความซึ่งจัดการด้วย def loop_translate(ln) และมีการป้องกันการวนลูปทำใหม่กรณีที่อินเทอร์เน็ตใช้งานไม่ได้ หรือขัดข้องใน  def translate_txt(ln) นอกจากนี้ก็ยังมีการกำหนด Rule ต่างๆเพื่อให้การแปลมีความถูกต้องแม่นยำมากขึ้นใน get_babi_raw(id, test_id,mode_f)
