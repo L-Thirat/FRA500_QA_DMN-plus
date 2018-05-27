@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4985e82e-465a-4089-aa71-88d52476017f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addition_fuse/re_data.py" afterPath="$PROJECT_DIR$/addition_fuse/re_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addition_fuse/dup_data.py" afterPath="$PROJECT_DIR$/addition_fuse/dup_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="re_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="re_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addition_fuse/re_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
@@ -91,18 +90,18 @@
       <file leaf-file-name="dup_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addition_fuse/dup_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1850">
-              <caret line="79" column="46" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+            <state relative-caret-position="139">
+              <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dmn_plus.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dmn_plus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dmn_plus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="400">
+              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -174,9 +173,9 @@
         <option value="$PROJECT_DIR$/dmn_test.py" />
         <option value="$PROJECT_DIR$/addition_fuse/text_translate_2fact.py" />
         <option value="$PROJECT_DIR$/dmn_train.py" />
-        <option value="$PROJECT_DIR$/addition_fuse/dup_data.py" />
         <option value="$PROJECT_DIR$/dmn_plus.py" />
         <option value="$PROJECT_DIR$/addition_fuse/re_data.py" />
+        <option value="$PROJECT_DIR$/addition_fuse/dup_data.py" />
       </list>
     </option>
   </component>
@@ -900,14 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addition_fuse/dup_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="79" column="46" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dmn_train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
@@ -938,22 +929,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dmn_plus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addition_fuse/re_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addition_fuse/dup_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmn_plus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

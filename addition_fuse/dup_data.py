@@ -12,23 +12,6 @@ def RepresentsInt(s):
         return True
     except ValueError:
         return False
-#
-# def translate_txt(ln):
-#     # translator = google_translate.GoogleTranslator()
-#     # out = translator.translate(ln, "thai")
-#     try:
-#         translator = Translator()
-#         out = translator.translate(ln, dest='th')
-#     except:
-#         print("waiting next loop..")
-#         sleep(60) # Time in seconds.
-#         translator = Translator()
-#         out = translator.translate(ln, dest='th')
-#     if out:
-#         return u'%s'%out.text
-#     else:
-#         print("waiting next out..")
-#         translate_txt(ln)
 
 def get_babi_raw(id, test_id,mode_f,dup):
     babi_map = {
@@ -81,30 +64,14 @@ def get_babi_raw(id, test_id,mode_f,dup):
     path_out = '../data_translate/%s_%s_person_%s.txt' % (babi_name,mode_f,dup[0])
     f = codecs.open(path_out, 'w',encoding='utf8')
     f_in = codecs.open(path_in, 'r',encoding='utf8')
-    # for i, line in enumerate(f_in):
-        # print(line)
-    # asd
-    # data = f_in.read().split("\n")
+
     original_name = [u"แซนดรา",u"แมรี่",u"จอห์น",u"ดาเนียล",u"จูลี่",u"บิล",u"เฟร็ด"]
     dict_val = {}
     for i,name in enumerate(original_name):
         dict_val[name] = dup[i]
 
-    # print(f_in.read())
-    # for i, line in enumerate(f_in):
-    #     if "?" in line:
-    #         for name in original_name:
-    #             if name in line:
-    #                 dict_val[i] = name
-    #                 break
-    # f_in.close()
-    # f_in = codecs.open(path_in, 'r',encoding='utf8')
-    # print(f_in.read())
-    # asd
     for i, line in enumerate(f_in):
-        # sdf
         nlp_ploc = line
-        #edit name
         nlp_ploc = nlp_ploc.replace(u"แซ น ด ร้า", u"แซนดรา")
         nlp_ploc = nlp_ploc.replace(u"ดา เนีย ล", u"ดาเนียล ")
         nlp_ploc = nlp_ploc.replace(u"ออฟ ฟิต", u"ออฟฟิศ ")
@@ -116,83 +83,13 @@ def get_babi_raw(id, test_id,mode_f,dup):
 
         nlp_ploc = nlp_ploc.replace(u" \tที่",u" \tไม่")
         nlp_ploc = nlp_ploc.replace(u" \tบางที",u" \tอาจจะ")
-        #name
-
-        # nlp_ploc = nlp_ploc.replace(u"แซนดรา", u"มาค")
-        # nlp_ploc = nlp_ploc.replace(u"แมรี่", u"ติ๋ม")
-        # nlp_ploc = nlp_ploc.replace(u"จอห์น", u"เจ")
-        # nlp_ploc = nlp_ploc.replace(u"ดาเนียล", u"โจ")
-        # nlp_ploc = nlp_ploc.replace(u"จูลี่", u"โม")
-        # nlp_ploc = nlp_ploc.replace(u"บิล", u"โบว")
-        # nlp_ploc = nlp_ploc.replace(u"เฟร็ด", u"เฟิร์น")
-
-        #verb
-        # nlp_ploc = nlp_ploc.replace(u"เดิน ", u"บิน ")
-        # nlp_ploc = nlp_ploc.replace(u"ไป ", u"ไปยัง ")
-        # nlp_ploc = nlp_ploc.replace(u"เดินทาง", u"พุ่งตรง")
-        # nlp_ploc = nlp_ploc.replace(u"เข้าไป", u"แวะไป")
-        # nlp_ploc = nlp_ploc.replace(u"กลับไป", u"หลบ")
-        # nlp_ploc = nlp_ploc.replace(u"ย้าย", u"หนี")
-        # nlp_ploc = nlp_ploc.replace(u"เสด็จ", u"มุ่ง")
-
-        # nlp_ploc = nlp_ploc.replace(u"เดิน", u"")
-        # nlp_ploc = nlp_ploc.replace(u"เดินทาง", u"")
-        # nlp_ploc = nlp_ploc.replace(u"เข้า", u"")
-        # nlp_ploc = nlp_ploc.replace(u"กลับ", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ย้าย", u"")
-        # nlp_ploc = nlp_ploc.replace(u"เสด็จ", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ที่", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ยัง", u"")
-        # nlp_ploc = nlp_ploc.replace(u"กับ", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ขึ้น", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ไว้", u"")
-        # nlp_ploc = nlp_ploc.replace(u"นั่น", u"")
-        # nlp_ploc = nlp_ploc.replace(u"แก่", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ลง", u"")
-        # nlp_ploc = nlp_ploc.replace(u"ท อดนม", u"วาง นม")
-        # nlp_ploc = nlp_ploc.replace(u"รับ", u"")
-        # nlp_ploc = nlp_ploc.replace(u"น้ำนม", u"นม")
-
-        #place
-        # nlp_ploc = nlp_ploc.replace(u"ห้องโถง", u"ภูเก็ต")
-        # nlp_ploc = nlp_ploc.replace(u"ห้องน้ำ", u"สงขลา")
-        # nlp_ploc = nlp_ploc.replace(u"ห้องอาบน้ำ", u"พะเยา")
-        # nlp_ploc = nlp_ploc.replace(u"ห้องครัว", u"สตูล")
-        # nlp_ploc = nlp_ploc.replace(u"ครัว", u"สตูล")
-        # nlp_ploc = nlp_ploc.replace(u"สวน", u"เชียงใหม่")
-        # nlp_ploc = nlp_ploc.replace(u"ออฟฟิศ", u"เชียงราย")
-        # nlp_ploc = nlp_ploc.replace(u"สำนักงาน", u"เชียงราย")
-        # nlp_ploc = nlp_ploc.replace(u"ห้องนอน", u"อุบล")
-        # nlp_ploc = nlp_ploc.replace(u"ลาน", u"กรุงเทพ")
-        # nlp_ploc = nlp_ploc.replace(u"โรงเรียน", u"ตรัง")
-        # nlp_ploc = nlp_ploc.replace(u"สวนสาธารณะ", u"เชียงใหม่")
-        # # nlp_ploc = nlp_ploc.replace(u"โรงหนัง", u"ตรัง")
-        # nlp_ploc = nlp_ploc.replace(u"โรงภาพยนตร์", u"โรงหนัง")
-
-
-        # from pythainlp.corpus import stopwords
-        # print(nlp_ploc)
-        # asdf
-        # words = [u"ที่",u"พุ่งตรง",u"แวะ",u"หนี"]
-        # exp = [u"มา"]
-        # for word in words:
-        #     # print(word)
-        #     if word not in exp:
-        #         nlp_ploc = nlp_ploc.replace(word,u"")
         for j in range (0,len(nlp_ploc.split(" "))):
             nlp_ploc = nlp_ploc.replace(u"  ", u" ")
         nlp_ploc = nlp_ploc.replace(u" ?", u"?")
         nlp_ploc = nlp_ploc.replace(u" .", u".")
-        # print(nlp_ploc)
 
-        # if "?" in nlp_ploc:
-        #     f.write(nlp_ploc)
-        #
-        # else:
         for val in dict_val.keys():
             nlp_ploc = nlp_ploc.replace(val,dict_val[val])
-        # for name in original_name:
-
 
         f.write(nlp_ploc[:-1])
         f.write("\n")
@@ -204,9 +101,4 @@ for d_name in range(0,len(dup_name)):
     temp = new_dup_seq[0]
     del new_dup_seq[0]
     new_dup_seq.append(temp)
-    print(new_dup_seq[0])
-    print(new_dup_seq[-1])
-    print("---------------")
-    # asd
-    # # for item in dup_name:
     print(get_babi_raw("10","10","train",new_dup_seq))
