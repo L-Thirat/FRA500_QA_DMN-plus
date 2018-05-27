@@ -13,22 +13,22 @@ def RepresentsInt(s):
     except ValueError:
         return False
 #
-# def translate_txt(ln):
-#     # translator = google_translate.GoogleTranslator()
-#     # out = translator.translate(ln, "thai")
-#     try:
-#         translator = Translator()
-#         out = translator.translate(ln, dest='th')
-#     except:
-#         print("waiting next loop..")
-#         sleep(60) # Time in seconds.
-#         translator = Translator()
-#         out = translator.translate(ln, dest='th')
-#     if out:
-#         return u'%s'%out.text
-#     else:
-#         print("waiting next out..")
-#         translate_txt(ln)
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 def get_babi_raw(id, test_id,mode_f):
     babi_map = {
@@ -81,10 +81,10 @@ def get_babi_raw(id, test_id,mode_f):
     path_out = '../data_translate/%s_%s_person_place.txt' % (babi_name,mode_f)
     f = codecs.open(path_out, 'w',encoding='utf8')
     f_in = codecs.open(path_in, 'r',encoding='utf8')
-    # for i, line in enumerate(f_in):
-        # print(line)
-    # asd
-    # data = f_in.read().split("\n")
+    #
+
+    #
+    #
     for i, line in enumerate(f_in):
         nlp_ploc = line
         #edit name
@@ -97,6 +97,7 @@ def get_babi_raw(id, test_id,mode_f):
 
         nlp_ploc = nlp_ploc.replace(u" \tที่",u" \tไม่")
         nlp_ploc = nlp_ploc.replace(u" \tบางที",u" \tอาจจะ")
+
         #name
         nlp_ploc = nlp_ploc.replace(u"แซนดรา", u"มาค")
         nlp_ploc = nlp_ploc.replace(u"แมรี่", u"ติ๋ม")
@@ -146,28 +147,15 @@ def get_babi_raw(id, test_id,mode_f):
         nlp_ploc = nlp_ploc.replace(u"ลาน", u"กรุงเทพ")
         nlp_ploc = nlp_ploc.replace(u"โรงเรียน", u"ตรัง")
         nlp_ploc = nlp_ploc.replace(u"สวนสาธารณะ", u"เชียงใหม่")
-        # nlp_ploc = nlp_ploc.replace(u"โรงหนัง", u"ตรัง")
         nlp_ploc = nlp_ploc.replace(u"โรงภาพยนตร์", u"โรงหนัง")
 
 
-        # from pythainlp.corpus import stopwords
-        print(nlp_ploc)
-        # words = [u"ที่",u"พุ่งตรง",u"แวะ",u"หนี"]
-        # exp = [u"มา"]
-        # for word in words:
-        #     # print(word)
-        #     if word not in exp:
-        #         nlp_ploc = nlp_ploc.replace(word,u"")
         for i in range (0,len(nlp_ploc.split(" "))):
             nlp_ploc = nlp_ploc.replace(u"  ", u" ")
         nlp_ploc = nlp_ploc.replace(u" ?", u"?")
         nlp_ploc = nlp_ploc.replace(u" .", u".")
-        print(nlp_ploc)
 
-        # if "?" in nlp_ploc:
-        #     f.write(nlp_ploc)
-        #
-        # else:
+
         f.write(nlp_ploc[:-1])
         f.write("\n")
         print(nlp_ploc)
