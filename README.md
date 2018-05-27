@@ -61,13 +61,13 @@ Below are the full results for each bAbI task (tasks where both implementations 
 DMN+ for Thai language
 ## All of my Source code are in https://github.com/few2005few/FRA500_QA_DMN-plus/tree/master/addition_fuse
 
-## Data set
+## Data set 
 bAbI dataset (Task 1,2,5,6,10,12,14,17)
 โดย dataset ที่เราแปลแล้วสามารถเข้าไปดูได้ใน https://github.com/few2005few/FRA500_QA_DMN-plus/tree/master/data_translate
 
 ## Translation
 สำหรับการแปลงข้อมูล bAbI dataset จากภาษาอังกฤษเป็นภาษาไทย เราเลือกใช้ googletrans package ซึ่งทำหน้าที่ดึง API จาก Google Translation มาใช้ ซึ่งภายในโค้ดนี้เราได้เลือกโค้ดที่สามารถแก้เรื่องจำกัดลิมิตในการแปลได้ ทำให้เราสามารถแปลงข้อมูล bAbI dataset พร้อมๆกันได้ แต่เนื่องจากการจะแปลงข้อมูล bAbI dataset นั้นเราต้องการที่จะตัดข้อความในส่วนของคำถาม กับคำตอบให้แยกออกจากกัน เพื่อให้ google translate ตัวนี้ ไม่สับสนในการแปลข้อความซึ่งจัดการด้วย def loop_translate(ln) และมีการป้องกันการวนลูปทำใหม่กรณีที่อินเทอร์เน็ตใช้งานไม่ได้ หรือขัดข้องใน  def translate_txt(ln) นอกจากนี้ก็ยังมีการกำหนด Rule ต่างๆเพื่อให้การแปลมีความถูกต้องแม่นยำมากขึ้นใน get_babi_raw(id, test_id,mode_f)
-# text_translate_2fact.py
+# text_translate_2fact.py  For python 2.7
 This file is use to convert data set bAbI in English to Thai
 สามารถเลือก data set ที่ต้องการจะรันด้วยการเปลี่ยน parameter ในบรรทัดสุดท้าย
 >> get_babi_raw("3","3","train")
@@ -76,10 +76,10 @@ This file is use to convert data set bAbI in English to Thai
 ตัวที่สาม คือ ชุดข้อมูลในการรัน ("train" / "test")
 โดยเอาท์พุทคือไฟล์ใหม่ที่เป็น data set bAbI ภาษาไทย
 
-## Word segmentation
+## Word segmentation  For python 2.7
 เนื่องจากการแปลภาษาที่ได้จาก google translate นั้นจะได้ในรูปแบบประโยค ซึ่งทำให้เราจำเป็นต้องจัดการปัญหาในการตัดคำ ซึ่งเราได้เลือก package pythainlp มาใช้
 https://medium.com/@rithikied/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B3%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-python-307120e7ebf2
-# Package pythainlp
+# Package pythainlp  For python 2.7
 สำหรับแพเกจนี้เราสามารถเลือกได้ว่าจะใช้อัลกอลิทึมอะไรในการตัดคำ ซึ่งประกอบด้วย
 icu — engine ตัวดั้งเดิมของ PyThaiNLP (ความแม่นยำต่ำ) และเป็นค่าเริ่มต้น
 dict — เป็นการตัดคำโดยใช้พจานุกรมจาก thaiword.txt ใน corpus (ความแม่นยำปานกลาง) จะคืนค่า False หากข้อความนั้นไม่สามารถตัดคำได้
@@ -92,12 +92,13 @@ wordcutpy ใช้ wordcutpy (https://github.com/veer66/wordcutpy) ในกา
 ** โดยเราได้เลือกใช้อัลกอลิทึม Maximum Matching algorithm ในการตัดคำ ซึ่งได้อธิบาการทำงานของอัลกอลิทึมไว้ใน Project report
 
 ## Improvement experimental in Project report (Google classroom)
-# Experiment 1-2: 
+# Experiment 1-2:    For python 3.6
 ในการทดลองที่ 1-2 เราอ้างอิงตาม package DMN+ เพียงแต่ทำการทดลองสองรอบ คือ train-test ด้วยภาษาอังกฤษ และภาษาไทยตามลำดับเพื่อเปรียบเทียบการทดลอง
 python dmn_train.py --babi_task_id 2
 python dmn_test.py --babi_task_id 2
+โดยเราสามารถปรับ จำนวนรอบการ train ซึ่งอยู่ใน Experiment 1 ได้ที่ไฟล์ dmn_plut.py line 24>> max_epochs = 30
 
-# Experiment 3: re_data.py
+# Experiment 3: re_data.py  For python 2.7
 เราใช้ไฟล์นี้ในการแปลงข้อมูลภาษาไทยเช่น ตัดคำสร้อย เปลี่ยนชื่อคน และชื่อสถานที่ ที่อยู่ใน test set ของ dataset bAbI ให้เป็นคำใหม่ที่ไม่เคยปรากฎอยู่ใน  training set เพื่อทดสอบว่าโมเดลจะสามารถทำงานได้ดีหรือไม่ภายใต้เงื่อนไขนี้ เพราะว่าในความเป็นจริงแล้วข้อมูลที่เกิดจาก user นั้นอาจมีคำใหม่ที่ไม่เคยพบมาก่อนในตอนที่ train
 ดังนั้นเราจึงใช้ไฟล์นี้ในการแปลงข้อมูลเหล่านั้นโดยการเลือก comment ในหัวข้อที่เราต้องการ
 - ตัดคำสร้อย line 109-134
@@ -105,7 +106,7 @@ python dmn_test.py --babi_task_id 2
 - แปลงสรถานที่ line 136-150
 จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (get_babi_raw("10","10","test"))
 
-# Experiment 4: dup_data.py
+# Experiment 4: dup_data.py  For python 2.7
 สำหรับการทดลองนี้เราต้องการที่จะเพิ่มประสิทธิภาพในปัญหาจากการทดลองที่ 3 ให้ดีขึ้น ด้วยการเพิ่มชื่อคนที่ปรากฎใน test set ลงใน training set เพื่อให้ระบบได้เรียน word vector ที่เกิดขึ้นใน test set ทั้งหมด โดยการคัดลอกไฟล์ (dupplicate) bAbI dataset ด้วยชื่อคนต่างๆที่เกิดขึ้นตาม test set ทุกกรณี จากนั้นำทุกไฟล์ที่ได้มา concatenate  เพื่อสร้างไฟล์ trainning set ที่คลุมรายชื่อที่เราแก้ไขใน test set มากขึ้น 
 จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (get_babi_raw("10","10","train",new_dup_seq))
 โดยที่ new_dup_seq เป็น list ของรายชื่อคนที่ปรากฎใน test set
