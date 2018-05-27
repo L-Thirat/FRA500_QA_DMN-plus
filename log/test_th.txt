@@ -1,0 +1,21 @@
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_test.py --babi_task_id 1
+2018-05-20 04:46:10.003016: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Testing DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+==> initializing variables
+==> restoring weights
+==> running DMN
+8 / 10 : loss = 143.216796875C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Test accuracy: 0.47800000000000004

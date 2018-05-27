@@ -1,0 +1,898 @@
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ bash fetch_babi_data.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14.9M  100 14.9M    0     0  3032k      0  0:00:05  0:00:05 --:--:-- 3159k
+tasks_1-20_v1-2/
+tasks_1-20_v1-2/hn/
+tasks_1-20_v1-2/hn/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/hn/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/hn/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/hn/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/hn/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/hn/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/hn/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/hn/qa12_conjunction_train.txt
+tasks_1-20_v1-2/hn/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/hn/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/hn/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/hn/qa7_counting_train.txt
+tasks_1-20_v1-2/hn/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/hn/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/hn/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/hn/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/hn/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/hn/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/hn/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/hn/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/hn/qa12_conjunction_test.txt
+tasks_1-20_v1-2/hn/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/hn/qa19_path-finding_test.txt
+tasks_1-20_v1-2/hn/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/hn/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/hn/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/hn/qa19_path-finding_train.txt
+tasks_1-20_v1-2/hn/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/hn/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/hn/qa7_counting_test.txt
+tasks_1-20_v1-2/hn/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/hn/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/hn/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/hn/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/hn/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/hn/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/hn/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/hn/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/hn/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/hn/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/shuffled/
+tasks_1-20_v1-2/shuffled/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/shuffled/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/shuffled/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/shuffled/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/shuffled/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/shuffled/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/shuffled/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/shuffled/qa12_conjunction_train.txt
+tasks_1-20_v1-2/shuffled/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/shuffled/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/shuffled/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/shuffled/qa7_counting_train.txt
+tasks_1-20_v1-2/shuffled/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/shuffled/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/shuffled/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/shuffled/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/shuffled/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/shuffled/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/shuffled/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/shuffled/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/shuffled/qa12_conjunction_test.txt
+tasks_1-20_v1-2/shuffled/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/shuffled/qa19_path-finding_test.txt
+tasks_1-20_v1-2/shuffled/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/shuffled/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/shuffled/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/shuffled/qa19_path-finding_train.txt
+tasks_1-20_v1-2/shuffled/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/shuffled/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/shuffled/qa7_counting_test.txt
+tasks_1-20_v1-2/shuffled/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/shuffled/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/shuffled/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/shuffled/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/shuffled/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/shuffled/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/shuffled/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/shuffled/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/shuffled/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/shuffled/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/en-10k/
+tasks_1-20_v1-2/en-10k/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/en-10k/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/en-10k/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/en-10k/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/en-10k/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/en-10k/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/en-10k/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/en-10k/qa12_conjunction_train.txt
+tasks_1-20_v1-2/en-10k/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/en-10k/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/en-10k/qa7_counting_train.txt
+tasks_1-20_v1-2/en-10k/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/en-10k/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/en-10k/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/en-10k/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/en-10k/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/en-10k/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/en-10k/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/en-10k/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/en-10k/qa12_conjunction_test.txt
+tasks_1-20_v1-2/en-10k/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/en-10k/qa19_path-finding_test.txt
+tasks_1-20_v1-2/en-10k/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/en-10k/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/en-10k/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/en-10k/qa19_path-finding_train.txt
+tasks_1-20_v1-2/en-10k/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/en-10k/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/en-10k/qa7_counting_test.txt
+tasks_1-20_v1-2/en-10k/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/en-10k/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/en-10k/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/en-10k/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/en-10k/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/en-10k/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/en-10k/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/en-10k/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/en-10k/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/en-valid/
+tasks_1-20_v1-2/en-valid/qa8_test.txt
+tasks_1-20_v1-2/en-valid/qa11_train.txt
+tasks_1-20_v1-2/en-valid/qa7_train.txt
+tasks_1-20_v1-2/en-valid/qa13_train.txt
+tasks_1-20_v1-2/en-valid/qa7_valid.txt
+tasks_1-20_v1-2/en-valid/qa19_train.txt
+tasks_1-20_v1-2/en-valid/qa12_train.txt
+tasks_1-20_v1-2/en-valid/qa18_train.txt
+tasks_1-20_v1-2/en-valid/qa6_test.txt
+tasks_1-20_v1-2/en-valid/qa9_test.txt
+tasks_1-20_v1-2/en-valid/qa8_valid.txt
+tasks_1-20_v1-2/en-valid/qa2_train.txt
+tasks_1-20_v1-2/en-valid/qa12_test.txt
+tasks_1-20_v1-2/en-valid/qa11_test.txt
+tasks_1-20_v1-2/en-valid/qa9_train.txt
+tasks_1-20_v1-2/en-valid/qa1_test.txt
+tasks_1-20_v1-2/en-valid/qa7_test.txt
+tasks_1-20_v1-2/en-valid/qa16_train.txt
+tasks_1-20_v1-2/en-valid/qa4_train.txt
+tasks_1-20_v1-2/en-valid/qa2_valid.txt
+tasks_1-20_v1-2/en-valid/qa5_valid.txt
+tasks_1-20_v1-2/en-valid/qa16_test.txt
+tasks_1-20_v1-2/en-valid/qa18_valid.txt
+tasks_1-20_v1-2/en-valid/qa13_test.txt
+tasks_1-20_v1-2/en-valid/qa11_valid.txt
+tasks_1-20_v1-2/en-valid/qa1_valid.txt
+tasks_1-20_v1-2/en-valid/qa5_train.txt
+tasks_1-20_v1-2/en-valid/qa15_test.txt
+tasks_1-20_v1-2/en-valid/qa20_train.txt
+tasks_1-20_v1-2/en-valid/qa18_test.txt
+tasks_1-20_v1-2/en-valid/qa19_valid.txt
+tasks_1-20_v1-2/en-valid/qa9_valid.txt
+tasks_1-20_v1-2/en-valid/qa17_valid.txt
+tasks_1-20_v1-2/en-valid/qa15_valid.txt
+tasks_1-20_v1-2/en-valid/qa5_test.txt
+tasks_1-20_v1-2/en-valid/qa20_valid.txt
+tasks_1-20_v1-2/en-valid/qa14_valid.txt
+tasks_1-20_v1-2/en-valid/qa4_valid.txt
+tasks_1-20_v1-2/en-valid/qa15_train.txt
+tasks_1-20_v1-2/en-valid/qa10_test.txt
+tasks_1-20_v1-2/en-valid/qa8_train.txt
+tasks_1-20_v1-2/en-valid/qa6_train.txt
+tasks_1-20_v1-2/en-valid/qa17_train.txt
+tasks_1-20_v1-2/en-valid/qa10_train.txt
+tasks_1-20_v1-2/en-valid/qa3_test.txt
+tasks_1-20_v1-2/en-valid/qa3_train.txt
+tasks_1-20_v1-2/en-valid/qa16_valid.txt
+tasks_1-20_v1-2/en-valid/qa3_valid.txt
+tasks_1-20_v1-2/en-valid/qa14_test.txt
+tasks_1-20_v1-2/en-valid/qa19_test.txt
+tasks_1-20_v1-2/en-valid/qa4_test.txt
+tasks_1-20_v1-2/en-valid/qa1_train.txt
+tasks_1-20_v1-2/en-valid/qa2_test.txt
+tasks_1-20_v1-2/en-valid/qa13_valid.txt
+tasks_1-20_v1-2/en-valid/qa20_test.txt
+tasks_1-20_v1-2/en-valid/qa6_valid.txt
+tasks_1-20_v1-2/en-valid/qa14_train.txt
+tasks_1-20_v1-2/en-valid/qa12_valid.txt
+tasks_1-20_v1-2/en-valid/qa17_test.txt
+tasks_1-20_v1-2/en-valid/qa10_valid.txt
+tasks_1-20_v1-2/hn-10k/
+tasks_1-20_v1-2/hn-10k/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/hn-10k/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/hn-10k/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/hn-10k/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/hn-10k/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/hn-10k/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/hn-10k/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/hn-10k/qa12_conjunction_train.txt
+tasks_1-20_v1-2/hn-10k/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/hn-10k/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/hn-10k/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/hn-10k/qa7_counting_train.txt
+tasks_1-20_v1-2/hn-10k/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/hn-10k/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/hn-10k/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/hn-10k/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/hn-10k/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/hn-10k/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/hn-10k/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/hn-10k/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/hn-10k/qa12_conjunction_test.txt
+tasks_1-20_v1-2/hn-10k/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/hn-10k/qa19_path-finding_test.txt
+tasks_1-20_v1-2/hn-10k/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/hn-10k/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/hn-10k/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/hn-10k/qa19_path-finding_train.txt
+tasks_1-20_v1-2/hn-10k/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/hn-10k/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/hn-10k/qa7_counting_test.txt
+tasks_1-20_v1-2/hn-10k/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/hn-10k/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/hn-10k/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/hn-10k/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/hn-10k/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/hn-10k/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/hn-10k/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/hn-10k/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/hn-10k/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/hn-10k/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/shuffled-10k/
+tasks_1-20_v1-2/shuffled-10k/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa12_conjunction_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa7_counting_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa12_conjunction_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa19_path-finding_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa19_path-finding_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa7_counting_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/shuffled-10k/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/shuffled-10k/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/en-valid-10k/
+tasks_1-20_v1-2/en-valid-10k/qa8_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa11_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa7_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa13_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa7_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa19_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa12_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa18_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa6_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa9_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa8_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa2_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa12_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa11_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa9_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa1_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa7_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa16_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa4_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa2_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa5_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa16_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa18_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa13_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa11_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa1_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa5_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa15_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa20_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa18_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa19_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa9_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa17_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa15_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa5_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa20_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa14_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa4_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa15_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa10_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa8_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa6_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa17_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa10_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa3_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa3_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa16_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa3_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa14_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa19_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa4_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa1_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa2_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa13_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa20_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa6_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa14_train.txt
+tasks_1-20_v1-2/en-valid-10k/qa12_valid.txt
+tasks_1-20_v1-2/en-valid-10k/qa17_test.txt
+tasks_1-20_v1-2/en-valid-10k/qa10_valid.txt
+tasks_1-20_v1-2/en/
+tasks_1-20_v1-2/en/qa16_basic-induction_train.txt
+tasks_1-20_v1-2/en/qa13_compound-coreference_train.txt
+tasks_1-20_v1-2/en/qa13_compound-coreference_test.txt
+tasks_1-20_v1-2/en/qa14_time-reasoning_test.txt
+tasks_1-20_v1-2/en/qa5_three-arg-relations_test.txt
+tasks_1-20_v1-2/en/qa17_positional-reasoning_train.txt
+tasks_1-20_v1-2/en/qa9_simple-negation_train.txt
+tasks_1-20_v1-2/en/qa12_conjunction_train.txt
+tasks_1-20_v1-2/en/qa6_yes-no-questions_train.txt
+tasks_1-20_v1-2/en/qa2_two-supporting-facts_test.txt
+tasks_1-20_v1-2/en/qa20_agents-motivations_train.txt
+tasks_1-20_v1-2/en/qa7_counting_train.txt
+tasks_1-20_v1-2/en/qa18_size-reasoning_test.txt
+tasks_1-20_v1-2/en/qa1_single-supporting-fact_train.txt
+tasks_1-20_v1-2/en/qa18_size-reasoning_train.txt
+tasks_1-20_v1-2/en/qa1_single-supporting-fact_test.txt
+tasks_1-20_v1-2/en/qa16_basic-induction_test.txt
+tasks_1-20_v1-2/en/qa8_lists-sets_train.txt
+tasks_1-20_v1-2/en/qa15_basic-deduction_test.txt
+tasks_1-20_v1-2/en/qa11_basic-coreference_train.txt
+tasks_1-20_v1-2/en/qa12_conjunction_test.txt
+tasks_1-20_v1-2/en/qa10_indefinite-knowledge_test.txt
+tasks_1-20_v1-2/en/qa19_path-finding_test.txt
+tasks_1-20_v1-2/en/qa8_lists-sets_test.txt
+tasks_1-20_v1-2/en/qa4_two-arg-relations_train.txt
+tasks_1-20_v1-2/en/qa10_indefinite-knowledge_train.txt
+tasks_1-20_v1-2/en/qa19_path-finding_train.txt
+tasks_1-20_v1-2/en/qa20_agents-motivations_test.txt
+tasks_1-20_v1-2/en/qa5_three-arg-relations_train.txt
+tasks_1-20_v1-2/en/qa7_counting_test.txt
+tasks_1-20_v1-2/en/qa3_three-supporting-facts_test.txt
+tasks_1-20_v1-2/en/qa14_time-reasoning_train.txt
+tasks_1-20_v1-2/en/qa17_positional-reasoning_test.txt
+tasks_1-20_v1-2/en/qa9_simple-negation_test.txt
+tasks_1-20_v1-2/en/qa4_two-arg-relations_test.txt
+tasks_1-20_v1-2/en/qa6_yes-no-questions_test.txt
+tasks_1-20_v1-2/en/qa15_basic-deduction_train.txt
+tasks_1-20_v1-2/en/qa3_three-supporting-facts_train.txt
+tasks_1-20_v1-2/en/qa2_two-supporting-facts_train.txt
+tasks_1-20_v1-2/en/qa11_basic-coreference_test.txt
+tasks_1-20_v1-2/LICENSE.txt
+tasks_1-20_v1-2/README.txt
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_train.py --babi_task_id 2
+2018-04-09 05:02:22.431645: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Training DMN plus on babi task 2
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa2_two-supporting-facts_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa2_two-supporting-facts_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+Starting run 0
+==> initializing variables
+==> starting training
+Epoch 0
+Training loss: 191.6167144775390648
+Validation loss: 162.49896240234375
+Training accuracy: 0.21177777777777781
+Vaildation accuracy: 0.35
+Saving weights
+Total time: 146.70419454574585
+Epoch 1
+Training loss: 147.0072631835937538
+Validation loss: 126.92021179199219
+Training accuracy: 0.4293333333333334
+Vaildation accuracy: 0.504
+Saving weights
+Total time: 137.41513323783875
+Epoch 2
+Training loss: 119.8663406372070339
+Validation loss: 100.27934265136719
+Training accuracy: 0.5505555555555557
+Vaildation accuracy: 0.627
+Saving weights
+Total time: 129.0941240787506
+Epoch 3
+Training loss: 88.9688873291015633
+Validation loss: 69.3554458618164
+Training accuracy: 0.6953333333333336
+Vaildation accuracy: 0.772
+Saving weights
+Total time: 128.23161363601685
+Epoch 4
+Training loss: 63.8959312438964845
+Validation loss: 58.8318977355957
+Training accuracy: 0.7937777777777779
+Vaildation accuracy: 0.8290000000000001
+Saving weights
+Total time: 137.96728444099426
+Epoch 5
+Training loss: 49.02709960937504746
+Validation loss: 47.95371627807617
+Training accuracy: 0.8497777777777779
+Vaildation accuracy: 0.8619999999999999
+Saving weights
+Total time: 151.26039266586304
+Epoch 6
+Training loss: 39.08221054077148446
+Validation loss: 44.21596908569336
+Training accuracy: 0.8791111111111108
+Vaildation accuracy: 0.8690000000000001
+Saving weights
+Total time: 147.9416046142578
+Epoch 7
+Training loss: 32.70903778076172346
+Validation loss: 40.6550178527832
+Training accuracy: 0.9012222222222225
+Vaildation accuracy: 0.8799999999999999
+Saving weights
+Total time: 147.58811402320862
+Epoch 8
+Training loss: 26.88882827758789566
+Validation loss: 37.225059509277344
+Training accuracy: 0.9197777777777776
+Vaildation accuracy: 0.899
+Saving weights
+Total time: 141.20174479484558
+Epoch 9
+Training loss: 23.40736007690429744
+Validation loss: 33.08192825317383
+Training accuracy: 0.9323333333333335
+Vaildation accuracy: 0.9100000000000001
+Saving weights
+Total time: 136.29926323890686
+Epoch 10
+Training loss: 19.86575508117675843
+Validation loss: 31.704814910888672
+Training accuracy: 0.9459999999999994
+Vaildation accuracy: 0.925
+Saving weights
+Total time: 132.92400598526
+Epoch 11
+Training loss: 17.90742683410644545
+Validation loss: 33.69060134887695
+Training accuracy: 0.9485555555555552
+Vaildation accuracy: 0.907
+Total time: 123.31011462211609
+Epoch 12
+Training loss: 16.55503273010254544
+Validation loss: 36.01382827758789
+Training accuracy: 0.9558888888888893
+Vaildation accuracy: 0.907
+Total time: 121.73812007904053
+Epoch 13
+Training loss: 14.49747848510742284
+Validation loss: 30.570974349975586
+Training accuracy: 0.9638888888888892
+Vaildation accuracy: 0.925
+Saving weights
+Total time: 151.0906343460083
+Epoch 14
+Training loss: 13.96187305450439567
+Validation loss: 28.44782066345215
+Training accuracy: 0.9635555555555553
+Vaildation accuracy: 0.9280000000000002
+Saving weights
+Total time: 164.83776545524597
+Epoch 15
+Training loss: 11.48576259613037176
+Validation loss: 29.94509506225586
+Training accuracy: 0.9698888888888887
+Vaildation accuracy: 0.925
+Total time: 138.00088691711426
+Epoch 16
+Training loss: 10.04074001312255956
+Validation loss: 30.41530990600586
+Training accuracy: 0.973555555555555
+Vaildation accuracy: 0.933
+Total time: 122.12834191322327
+Epoch 17
+Training loss: 10.43038082122802777
+Validation loss: 26.320697784423828
+Training accuracy: 0.9734444444444448
+Vaildation accuracy: 0.9409999999999998
+Saving weights
+Total time: 136.4278826713562
+Epoch 18
+Training loss: 10.03248691558837942
+Validation loss: 30.65033531188965
+Training accuracy: 0.9743333333333332
+Vaildation accuracy: 0.9399999999999998
+Total time: 121.01978826522827
+Epoch 19
+Training loss: 8.863216400146484555
+Validation loss: 30.126806259155273
+Training accuracy: 0.9793333333333324
+Vaildation accuracy: 0.937
+Total time: 123.71111512184143
+Epoch 20
+Training loss: 9.33754825592041086
+Validation loss: 28.158447265625
+Training accuracy: 0.977666666666666
+Vaildation accuracy: 0.9339999999999999
+Total time: 126.44513750076294
+Epoch 21
+Training loss: 8.58475780487060514
+Validation loss: 29.36749267578125
+Training accuracy: 0.9805555555555551
+Vaildation accuracy: 0.946
+Total time: 125.44930529594421
+Epoch 22
+Training loss: 8.992043495178223655
+Validation loss: 31.359439849853516
+Training accuracy: 0.978666666666666
+Vaildation accuracy: 0.933
+Total time: 126.20645833015442
+Epoch 23
+Training loss: 7.755993843078613885
+Validation loss: 26.980941772460938
+Training accuracy: 0.983666666666666
+Vaildation accuracy: 0.9440000000000002
+Total time: 127.5016040802002
+Epoch 24
+Training loss: 7.463951110839844035
+Validation loss: 22.813350677490234
+Training accuracy: 0.983222222222222
+Vaildation accuracy: 0.952
+Saving weights
+Total time: 144.41918206214905
+Epoch 25
+Training loss: 6.962150573730469265
+Validation loss: 28.897247314453125
+Training accuracy: 0.9851111111111105
+Vaildation accuracy: 0.9440000000000002
+Total time: 130.68699479103088
+Epoch 26
+Training loss: 7.245590686798096675
+Validation loss: 24.2294921875
+Training accuracy: 0.9835555555555552
+Vaildation accuracy: 0.951
+Total time: 123.23722314834595
+Epoch 27
+Training loss: 8.258893013000488845
+Validation loss: 23.718671798706055
+Training accuracy: 0.9803333333333337
+Vaildation accuracy: 0.9510000000000002
+Total time: 123.3699963092804
+Epoch 28
+Training loss: 6.769860267639168835
+Validation loss: 24.729778289794922
+Training accuracy: 0.986555555555555
+Vaildation accuracy: 0.9469999999999998
+Total time: 135.30759501457214
+Epoch 29
+Training loss: 6.308246612548828235
+Validation loss: 29.2772159576416
+Training accuracy: 0.9870000000000003
+Vaildation accuracy: 0.95
+Total time: 142.519225358963
+Epoch 30
+Training loss: 6.048327445983887335
+Validation loss: 27.498889923095703
+Training accuracy: 0.9877777777777769
+Vaildation accuracy: 0.95
+Total time: 140.24501085281372
+Epoch 31
+Training loss: 5.818925857543945785
+Validation loss: 27.146015167236328
+Training accuracy: 0.989555555555555
+Vaildation accuracy: 0.951
+Total time: 138.1447310447693
+Epoch 32
+Training loss: 5.397077560424805385
+Validation loss: 25.2668399810791
+Training accuracy: 0.9904444444444441
+Vaildation accuracy: 0.945
+Total time: 142.01527428627014
+Epoch 33
+Training loss: 6.189300537109375145
+Validation loss: 28.295324325561523
+Training accuracy: 0.9876666666666665
+Vaildation accuracy: 0.9510000000000002
+Total time: 144.27915716171265
+Epoch 34
+Training loss: 7.316997528076172745
+Validation loss: 22.32741928100586
+Training accuracy: 0.9849999999999993
+Vaildation accuracy: 0.953
+Saving weights
+Total time: 157.92765951156616
+Epoch 35
+Training loss: 5.719857215881348955
+Validation loss: 29.080379486083984
+Training accuracy: 0.9892222222222221
+Vaildation accuracy: 0.945
+Total time: 145.24593591690063
+Epoch 36
+Training loss: 5.852379798889162255
+Validation loss: 30.638442993164062
+Training accuracy: 0.9901111111111106
+Vaildation accuracy: 0.9460000000000001
+Total time: 149.06813788414001
+Epoch 37
+Training loss: 5.318271160125732335
+Validation loss: 26.506607055664062
+Training accuracy: 0.990777777777777
+Vaildation accuracy: 0.9540000000000001
+Total time: 152.30465292930603
+Epoch 38
+Training loss: 5.314100742340088085
+Validation loss: 27.063339233398438
+Training accuracy: 0.9912222222222218
+Vaildation accuracy: 0.952
+Total time: 155.11824917793274
+Epoch 39
+Training loss: 5.183572292327881585
+Validation loss: 26.861465454101562
+Training accuracy: 0.9909999999999992
+Vaildation accuracy: 0.954
+Total time: 151.31928515434265
+Epoch 40
+Training loss: 4.994383335113525125
+Validation loss: 20.793899536132812
+Training accuracy: 0.9916666666666659
+Vaildation accuracy: 0.9549999999999998
+Saving weights
+Total time: 170.94907665252686
+Epoch 41
+Training loss: 4.854611396789551535
+Validation loss: 21.450496673583984
+Training accuracy: 0.9932222222222218
+Vaildation accuracy: 0.9569999999999999
+Total time: 147.76485419273376
+Epoch 42
+Training loss: 5.569120407104492865
+Validation loss: 27.513202667236328
+Training accuracy: 0.9898888888888886
+Vaildation accuracy: 0.953
+Total time: 152.6267795562744
+Epoch 43
+Training loss: 5.000980377197266065
+Validation loss: 23.88518714904785
+Training accuracy: 0.9914444444444437
+Vaildation accuracy: 0.952
+Total time: 154.58398151397705
+Epoch 44
+Training loss: 4.919019699096689925
+Validation loss: 23.919038772583008
+Training accuracy: 0.9914444444444439
+Vaildation accuracy: 0.9570000000000001
+Total time: 159.01476073265076
+Epoch 45
+Training loss: 4.516987323760986145
+Validation loss: 21.753612518310547
+Training accuracy: 0.993555555555555
+Vaildation accuracy: 0.9600000000000002
+Total time: 162.23035311698914
+Epoch 46
+Training loss: 4.707242488861084665
+Validation loss: 23.407413482666016
+Training accuracy: 0.9927777777777774
+Vaildation accuracy: 0.9560000000000001
+Total time: 164.114319562912
+Epoch 47
+Training loss: 4.536664485931396555
+Validation loss: 26.255910873413086
+Training accuracy: 0.994444444444444
+Vaildation accuracy: 0.9479999999999998
+Total time: 170.68178129196167
+Epoch 48
+Training loss: 5.388770103454598955
+Validation loss: 29.61952781677246
+Training accuracy: 0.9909999999999998
+Vaildation accuracy: 0.952
+Total time: 174.493914604187
+Epoch 49
+Training loss: 5.280961036682129875
+Validation loss: 24.65652847290039
+Training accuracy: 0.9905555555555552
+Vaildation accuracy: 0.961
+Total time: 177.8849310874939
+Epoch 50
+Training loss: 4.343749523162842365
+Validation loss: 25.292587280273438
+Training accuracy: 0.9939999999999994
+Vaildation accuracy: 0.959
+Total time: 182.64132285118103
+Epoch 51
+Training loss: 4.131867408752441984
+Validation loss: 24.638647079467773
+Training accuracy: 0.9953333333333328
+Vaildation accuracy: 0.9550000000000001
+Total time: 182.68268656730652
+Epoch 52
+Training loss: 4.681258201599121865
+Validation loss: 25.658050537109375
+Training accuracy: 0.9931111111111107
+Vaildation accuracy: 0.95
+Total time: 185.2194309234619
+Epoch 53
+Training loss: 5.024523258209228555
+Validation loss: 23.053037643432617
+Training accuracy: 0.991
+Vaildation accuracy: 0.9560000000000001
+Total time: 185.13821458816528
+Epoch 54
+Training loss: 4.905806541442871565
+Validation loss: 25.136714935302734
+Training accuracy: 0.9929999999999998
+Vaildation accuracy: 0.9550000000000001
+Total time: 187.61880898475647
+Epoch 55
+Training loss: 4.559565544128418835
+Validation loss: 23.22774314880371
+Training accuracy: 0.993333333333333
+Vaildation accuracy: 0.958
+Total time: 189.7113733291626
+Epoch 56
+Training loss: 4.636700630187988445
+Validation loss: 25.487010955810547
+Training accuracy: 0.9934444444444436
+Vaildation accuracy: 0.9570000000000001
+Total time: 193.4222388267517
+Epoch 57
+Training loss: 4.410964488983154165
+Validation loss: 26.126056671142578
+Training accuracy: 0.9933333333333331
+Vaildation accuracy: 0.9600000000000002
+Total time: 218.6452043056488
+Epoch 58
+Training loss: 5.087090492248535335
+Validation loss: 19.08953857421875
+Training accuracy: 0.992222222222222
+Vaildation accuracy: 0.9660000000000002
+Saving weights
+Total time: 229.89199709892273
+Epoch 59
+Training loss: 4.719363212585449565
+Validation loss: 25.17559242248535
+Training accuracy: 0.9934444444444444
+Vaildation accuracy: 0.9530000000000001
+Total time: 212.39399981498718
+Epoch 60
+Training loss: 4.210986614227295185
+Validation loss: 27.977840423583984
+Training accuracy: 0.9952222222222218
+Vaildation accuracy: 0.9579999999999999
+Total time: 219.04723572731018
+Epoch 61
+Training loss: 4.247544288635254484
+Validation loss: 22.744232177734375
+Training accuracy: 0.994111111111111
+Vaildation accuracy: 0.959
+Total time: 233.37104654312134
+Epoch 62
+Training loss: 4.004906654357911545
+Validation loss: 25.67763900756836
+Training accuracy: 0.9954444444444441
+Vaildation accuracy: 0.96
+Total time: 232.59142875671387
+Epoch 63
+Training loss: 3.607015609741211483
+Validation loss: 21.306774139404297
+Training accuracy: 0.9959999999999997
+Vaildation accuracy: 0.9640000000000001
+Total time: 249.18049693107605
+Epoch 64
+Training loss: 4.782465934753418845
+Validation loss: 23.189441680908203
+Training accuracy: 0.9923333333333328
+Vaildation accuracy: 0.9620000000000001
+Total time: 247.89745426177979
+Epoch 65
+Training loss: 4.061221122741699165
+Validation loss: 25.31673240661621
+Training accuracy: 0.9939999999999999
+Vaildation accuracy: 0.9629999999999999
+Total time: 215.0256748199463
+Epoch 66
+Training loss: 3.812260150909424558
+Validation loss: 24.388046264648438
+Training accuracy: 0.9948888888888888
+Vaildation accuracy: 0.97
+Total time: 227.4396777153015
+Epoch 67
+Training loss: 3.759383916854858424
+Validation loss: 25.922607421875
+Training accuracy: 0.9957777777777777
+Vaildation accuracy: 0.9589999999999999
+Total time: 216.73923015594482
+Epoch 68
+Training loss: 3.637778043746948266
+Validation loss: 29.187366485595703
+Training accuracy: 0.9959999999999999
+Vaildation accuracy: 0.96
+Total time: 218.62951707839966
+Epoch 69
+Training loss: 4.110980033874512335
+Validation loss: 22.24095916748047
+Training accuracy: 0.9947777777777776
+Vaildation accuracy: 0.9570000000000001
+Total time: 221.2622537612915
+Epoch 70
+Training loss: 3.900028705596924125
+Validation loss: 24.639572143554688
+Training accuracy: 0.9952222222222221
+Vaildation accuracy: 0.9630000000000001
+Total time: 223.87520217895508
+Epoch 71
+Training loss: 4.109445571899414336
+Validation loss: 25.454593658447266
+Training accuracy: 0.9952222222222221
+Vaildation accuracy: 0.953
+Total time: 227.14288997650146
+Epoch 72
+Training loss: 4.766012668609619635
+Validation loss: 20.07259178161621
+Training accuracy: 0.9931111111111107
+Vaildation accuracy: 0.9640000000000001
+Total time: 227.49883699417114
+Epoch 73
+Training loss: 4.306337356567383345
+Validation loss: 20.327463150024414
+Training accuracy: 0.9939999999999997
+Vaildation accuracy: 0.9669999999999999
+Total time: 228.15558075904846
+Epoch 74
+Training loss: 5.078422546386719065
+Validation loss: 26.544021606445312
+Training accuracy: 0.9916666666666664
+Vaildation accuracy: 0.9559999999999998
+Total time: 231.0943958759308
+Epoch 75
+Training loss: 4.455724239349365055
+Validation loss: 27.380544662475586
+Training accuracy: 0.9932222222222219
+Vaildation accuracy: 0.9610000000000001
+Total time: 232.72172045707703
+Epoch 76
+Training loss: 3.912111759185791982
+Validation loss: 28.639633178710938
+Training accuracy: 0.9951111111111105
+Vaildation accuracy: 0.9560000000000001
+Total time: 237.55964040756226
+Epoch 77
+Training loss: 4.235898017883301955
+Validation loss: 19.402833938598633
+Training accuracy: 0.9943333333333331
+Vaildation accuracy: 0.9670000000000002
+Total time: 238.274427652359
+Epoch 78
+Training loss: 3.787715911865234465
+Validation loss: 21.379474639892578
+Training accuracy: 0.9955555555555549
+Vaildation accuracy: 0.9679999999999997
+Total time: 241.5602204799652
+Epoch 79
+8 / 10 : loss = 28.643693923950195C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Training loss: 3.8012986183166504
+Validation loss: 28.6175594329834
+Training accuracy: 0.9963333333333331
+Vaildation accuracy: 0.959
+Best validation accuracy: 0.9660000000000002
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$

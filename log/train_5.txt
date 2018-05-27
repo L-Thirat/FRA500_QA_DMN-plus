@@ -1,0 +1,1739 @@
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_train.py --babi_task_id 1
+2018-05-20 04:13:32.419751: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Training DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+Starting run 0
+==> initializing variables
+==> starting training
+Epoch 0
+Training loss: 238.4905395507812558
+Validation loss: 193.59730529785156
+Training accuracy: 0.16155555555555556
+Vaildation accuracy: 0.213
+Saving weights
+Total time: 8.614378929138184
+Epoch 1
+Training loss: 197.8704223632812552
+Validation loss: 192.610107421875
+Training accuracy: 0.17022222222222225
+Vaildation accuracy: 0.215
+Saving weights
+Total time: 6.8465352058410645
+Epoch 2
+Training loss: 193.0264739990234466
+Validation loss: 188.43283081054688
+Training accuracy: 0.20322222222222217
+Vaildation accuracy: 0.23400000000000004
+Saving weights
+Total time: 7.172971248626709
+Epoch 3
+Training loss: 189.6497802734375758
+Validation loss: 185.1881866455078
+Training accuracy: 0.22155555555555562
+Vaildation accuracy: 0.25100000000000006
+Saving weights
+Total time: 7.621270179748535
+Epoch 4
+Training loss: 181.4266967773437555
+Validation loss: 175.3973846435547
+Training accuracy: 0.29333333333333333
+Vaildation accuracy: 0.33799999999999997
+Saving weights
+Total time: 8.169806480407715
+Epoch 5
+Training loss: 176.5134429931640664
+Validation loss: 169.58116149902344
+Training accuracy: 0.33444444444444443
+Vaildation accuracy: 0.4010000000000001
+Saving weights
+Total time: 8.722683429718018
+Epoch 6
+Training loss: 172.5466003417968856
+Validation loss: 168.4481201171875
+Training accuracy: 0.3528888888888889
+Vaildation accuracy: 0.418
+Saving weights
+Total time: 7.94271183013916
+Epoch 7
+Training loss: 168.4657592773437585
+Validation loss: 163.25286865234375
+Training accuracy: 0.3882222222222222
+Vaildation accuracy: 0.4149999999999999
+Saving weights
+Total time: 6.692413330078125
+Epoch 8
+Training loss: 164.2165832519531226
+Validation loss: 163.9457550048828
+Training accuracy: 0.4121111111111112
+Vaildation accuracy: 0.413
+Total time: 3.5118343830108643
+Epoch 9
+Training loss: 162.3689270019531256
+Validation loss: 158.41265869140625
+Training accuracy: 0.4308888888888888
+Vaildation accuracy: 0.458
+Saving weights
+Total time: 6.540675163269043
+Epoch 10
+Training loss: 160.6515045166015622
+Validation loss: 160.4417266845703
+Training accuracy: 0.4377777777777778
+Vaildation accuracy: 0.47800000000000004
+Total time: 3.506319999694824
+Epoch 11
+Training loss: 159.0570220947265628
+Validation loss: 154.4955291748047
+Training accuracy: 0.4535555555555555
+Vaildation accuracy: 0.48900000000000005
+Saving weights
+Total time: 6.579047918319702
+Epoch 12
+Training loss: 156.1086730957031256
+Validation loss: 156.6699676513672
+Training accuracy: 0.4603333333333333
+Vaildation accuracy: 0.4950000000000001
+Total time: 3.5133373737335205
+Epoch 13
+Training loss: 156.2458496093758756
+Validation loss: 150.7401123046875
+Training accuracy: 0.46333333333333326
+Vaildation accuracy: 0.503
+Saving weights
+Total time: 6.432427883148193
+Epoch 14
+Training loss: 152.7852630615234484
+Validation loss: 150.64517211914062
+Training accuracy: 0.4780000000000001
+Vaildation accuracy: 0.493
+Saving weights
+Total time: 6.396934270858765
+Epoch 15
+Training loss: 151.9182281494140656
+Validation loss: 151.32699584960938
+Training accuracy: 0.4852222222222224
+Vaildation accuracy: 0.4840000000000001
+Total time: 3.5699548721313477
+Epoch 16
+Training loss: 151.1511688232422762
+Validation loss: 151.50669860839844
+Training accuracy: 0.4876666666666668
+Vaildation accuracy: 0.511
+Total time: 3.4968090057373047
+Epoch 17
+Training loss: 149.8934020996093845
+Validation loss: 148.22842407226562
+Training accuracy: 0.4873333333333332
+Vaildation accuracy: 0.5240000000000001
+Saving weights
+Total time: 6.563539505004883
+Epoch 18
+Training loss: 149.3845520019531252
+Validation loss: 150.7945556640625
+Training accuracy: 0.49122222222222234
+Vaildation accuracy: 0.48199999999999993
+Total time: 3.5128352642059326
+Epoch 19
+Training loss: 148.6504058837890645
+Validation loss: 148.98916625976562
+Training accuracy: 0.49211111111111094
+Vaildation accuracy: 0.49700000000000005
+Total time: 3.5258798599243164
+Epoch 20
+Training loss: 147.5591735839843855
+Validation loss: 147.8589324951172
+Training accuracy: 0.49666666666666687
+Vaildation accuracy: 0.497
+Saving weights
+Total time: 6.563953399658203
+Epoch 21
+Training loss: 146.2843475341797625
+Validation loss: 147.97640991210938
+Training accuracy: 0.4994444444444444
+Vaildation accuracy: 0.522
+Total time: 3.685807466506958
+Epoch 22
+Training loss: 145.3166656494140622
+Validation loss: 144.7468719482422
+Training accuracy: 0.49900000000000005
+Vaildation accuracy: 0.515
+Saving weights
+Total time: 6.7889463901519775
+Epoch 23
+Training loss: 143.3108062744140625
+Validation loss: 144.08670043945312
+Training accuracy: 0.511111111111111
+Vaildation accuracy: 0.518
+Saving weights
+Total time: 7.024903297424316
+Epoch 24
+Training loss: 142.0279693603515654
+Validation loss: 145.06253051757812
+Training accuracy: 0.5109999999999999
+Vaildation accuracy: 0.516
+Total time: 3.569485902786255
+Epoch 25
+Training loss: 142.7905731201172125
+Validation loss: 144.69834899902344
+Training accuracy: 0.5068888888888888
+Vaildation accuracy: 0.509
+Total time: 3.5033113956451416
+Epoch 26
+Training loss: 142.5695953369140655
+Validation loss: 146.88621520996094
+Training accuracy: 0.5106666666666667
+Vaildation accuracy: 0.5
+Total time: 3.4917807579040527
+Epoch 27
+Training loss: 141.1316986083984425
+Validation loss: 142.59774780273438
+Training accuracy: 0.5134444444444447
+Vaildation accuracy: 0.509
+Saving weights
+Total time: 6.508864164352417
+Epoch 28
+Training loss: 138.7820129394531284
+Validation loss: 145.766845703125
+Training accuracy: 0.5172222222222225
+Vaildation accuracy: 0.5180000000000001
+Total time: 3.5383505821228027
+Epoch 29
+Training loss: 139.6612701416015652
+Validation loss: 143.15382385253906
+Training accuracy: 0.5155555555555557
+Vaildation accuracy: 0.518
+Total time: 3.5338926315307617
+Epoch 30
+Training loss: 138.1332092285156264
+Validation loss: 143.78028869628906
+Training accuracy: 0.5156666666666668
+Vaildation accuracy: 0.506
+Total time: 3.531386137008667
+Epoch 31
+Training loss: 139.1212463378906288
+Validation loss: 143.6354522705078
+Training accuracy: 0.5144444444444447
+Vaildation accuracy: 0.508
+Total time: 3.5248684883117676
+Epoch 32
+Training loss: 137.7502136230468842
+Validation loss: 143.53598022460938
+Training accuracy: 0.514
+Vaildation accuracy: 0.511
+Total time: 3.529381275177002
+Epoch 33
+Training loss: 138.5943145751953888
+Validation loss: 144.33438110351562
+Training accuracy: 0.5123333333333335
+Vaildation accuracy: 0.502
+Total time: 3.5133376121520996
+Epoch 34
+Training loss: 135.6692199707031288
+Validation loss: 140.52540588378906
+Training accuracy: 0.519111111111111
+Vaildation accuracy: 0.5200000000000001
+Saving weights
+Total time: 6.546424388885498
+Epoch 35
+Training loss: 136.2359924316406246
+Validation loss: 144.40567016601562
+Training accuracy: 0.518888888888889
+Vaildation accuracy: 0.5040000000000001
+Total time: 3.587534189224243
+Epoch 36
+Training loss: 134.4029998779297628
+Validation loss: 146.71621704101562
+Training accuracy: 0.516
+Vaildation accuracy: 0.502
+Total time: 3.522655963897705
+Epoch 37
+Training loss: 135.1051940917968884
+Validation loss: 143.81002807617188
+Training accuracy: 0.515222222222222
+Vaildation accuracy: 0.508
+Total time: 3.7218923568725586
+Epoch 38
+Training loss: 132.7205505371093822
+Validation loss: 141.84620666503906
+Training accuracy: 0.5302222222222222
+Vaildation accuracy: 0.5090000000000001
+Total time: 3.548431873321533
+Epoch 39
+Training loss: 132.1358337402343852
+Validation loss: 141.45669555664062
+Training accuracy: 0.5241111111111112
+Vaildation accuracy: 0.495
+Total time: 3.5499351024627686
+Epoch 40
+Training loss: 132.5157623291015665
+Validation loss: 141.6199188232422
+Training accuracy: 0.5274444444444445
+Vaildation accuracy: 0.49799999999999994
+Total time: 3.5354182720184326
+Epoch 41
+Training loss: 131.6407623291015652
+Validation loss: 140.2041778564453
+Training accuracy: 0.5277777777777776
+Vaildation accuracy: 0.497
+Saving weights
+Total time: 6.451303720474243
+Epoch 42
+Training loss: 131.6869659423828626
+Validation loss: 142.1333770751953
+Training accuracy: 0.5233333333333333
+Vaildation accuracy: 0.493
+Total time: 3.5604357719421387
+Epoch 43
+Training loss: 132.0795898437596882
+Validation loss: 141.79220581054688
+Training accuracy: 0.5207777777777778
+Vaildation accuracy: 0.49300000000000005
+Total time: 3.5539753437042236
+Epoch 44
+Training loss: 128.8222656256171882
+Validation loss: 141.10562133789062
+Training accuracy: 0.5324444444444443
+Vaildation accuracy: 0.5060000000000001
+Total time: 3.5173614025115967
+Epoch 45
+Training loss: 130.2687835693359475
+Validation loss: 143.69915771484375
+Training accuracy: 0.5298888888888885
+Vaildation accuracy: 0.49399999999999994
+Total time: 3.540961742401123
+Epoch 46
+Training loss: 127.7633819580078156
+Validation loss: 144.8782958984375
+Training accuracy: 0.5345555555555551
+Vaildation accuracy: 0.496
+Total time: 3.5343945026397705
+Epoch 47
+Training loss: 130.1529846191406265
+Validation loss: 142.83169555664062
+Training accuracy: 0.5288888888888889
+Vaildation accuracy: 0.504
+Total time: 3.5474634170532227
+Epoch 48
+Training loss: 126.7094726562573445
+Validation loss: 145.52296447753906
+Training accuracy: 0.5418888888888891
+Vaildation accuracy: 0.488
+Total time: 3.5308849811553955
+Epoch 49
+Training loss: 128.1397705078125252
+Validation loss: 141.62855529785156
+Training accuracy: 0.5363333333333332
+Vaildation accuracy: 0.4870000000000001
+Total time: 3.534393787384033
+Epoch 50
+Training loss: 126.5291900634765624
+Validation loss: 143.6874237060547
+Training accuracy: 0.5415555555555558
+Vaildation accuracy: 0.472
+Total time: 3.5589592456817627
+Epoch 51
+Training loss: 126.0331954956054727
+Validation loss: 146.19003295898438
+Training accuracy: 0.5391111111111111
+Vaildation accuracy: 0.458
+Total time: 3.5258710384368896
+Epoch 52
+Training loss: 126.6348342895507853
+Validation loss: 144.82229614257812
+Training accuracy: 0.5317777777777778
+Vaildation accuracy: 0.48500000000000004
+Total time: 3.5138745307922363
+Epoch 53
+Training loss: 126.0688781738281226
+Validation loss: 143.14698791503906
+Training accuracy: 0.5375555555555559
+Vaildation accuracy: 0.505
+Total time: 3.5158438682556152
+Epoch 54
+Training loss: 124.8802719116211882
+Validation loss: 141.066162109375
+Training accuracy: 0.5413333333333334
+Vaildation accuracy: 0.491
+Total time: 3.5474445819854736
+Epoch 55
+Training loss: 123.8439483642578168
+Validation loss: 141.23330688476562
+Training accuracy: 0.5368888888888889
+Vaildation accuracy: 0.5
+Total time: 3.5208580493927
+Epoch 56
+Training loss: 122.3879547119140681
+Validation loss: 138.9427032470703
+Training accuracy: 0.545
+Vaildation accuracy: 0.504
+Saving weights
+Total time: 6.576738357543945
+Epoch 57
+Training loss: 124.6691055297851662
+Validation loss: 140.72084045410156
+Training accuracy: 0.5404444444444445
+Vaildation accuracy: 0.4990000000000001
+Total time: 3.520357131958008
+Epoch 58
+Training loss: 123.5072708129882829
+Validation loss: 142.91796875
+Training accuracy: 0.5383333333333336
+Vaildation accuracy: 0.48600000000000004
+Total time: 3.5163464546203613
+Epoch 59
+Training loss: 121.4883270263671961
+Validation loss: 141.80557250976562
+Training accuracy: 0.5496666666666667
+Vaildation accuracy: 0.496
+Total time: 3.564974784851074
+Epoch 60
+Training loss: 120.5995025634765686
+Validation loss: 140.2543182373047
+Training accuracy: 0.5515555555555556
+Vaildation accuracy: 0.503
+Total time: 3.516848087310791
+Epoch 61
+Training loss: 122.1068878173828154
+Validation loss: 143.9910430908203
+Training accuracy: 0.5447777777777776
+Vaildation accuracy: 0.481
+Total time: 3.5183637142181396
+Epoch 62
+Training loss: 120.7852249145507856
+Validation loss: 145.6323699951172
+Training accuracy: 0.5453333333333333
+Vaildation accuracy: 0.49000000000000005
+Total time: 3.7279083728790283
+Epoch 63
+Training loss: 119.4150161743164568
+Validation loss: 145.88116455078125
+Training accuracy: 0.5527777777777778
+Vaildation accuracy: 0.4999999999999999
+Total time: 3.550938129425049
+Epoch 64
+Training loss: 118.8147659301757888
+Validation loss: 142.6889190673828
+Training accuracy: 0.550888888888889
+Vaildation accuracy: 0.488
+Total time: 3.6411890983581543
+Epoch 65
+Training loss: 120.3833312988281264
+Validation loss: 145.67190551757812
+Training accuracy: 0.5503333333333333
+Vaildation accuracy: 0.491
+Total time: 3.5058372020721436
+Epoch 66
+Training loss: 118.6147003173828155
+Validation loss: 145.8680419921875
+Training accuracy: 0.5477777777777777
+Vaildation accuracy: 0.49800000000000005
+Total time: 3.6802818775177
+Epoch 67
+Training loss: 119.1900253295898461
+Validation loss: 145.94485473632812
+Training accuracy: 0.5507777777777776
+Vaildation accuracy: 0.495
+Total time: 3.746957778930664
+Epoch 68
+Training loss: 117.6117401123046985
+Validation loss: 143.46298217773438
+Training accuracy: 0.5587777777777778
+Vaildation accuracy: 0.48900000000000005
+Total time: 3.561466693878174
+Epoch 69
+Training loss: 117.2850570678711562
+Validation loss: 144.6724090576172
+Training accuracy: 0.5561111111111111
+Vaildation accuracy: 0.4789999999999999
+Total time: 3.534895181655884
+Epoch 70
+Training loss: 117.8771896362304762
+Validation loss: 148.15261840820312
+Training accuracy: 0.5587777777777778
+Vaildation accuracy: 0.484
+Total time: 3.518350839614868
+Epoch 71
+Training loss: 118.4369277954101651
+Validation loss: 148.77426147460938
+Training accuracy: 0.5565555555555556
+Vaildation accuracy: 0.488
+Total time: 3.5048155784606934
+Epoch 72
+Training loss: 115.7554473876953188
+Validation loss: 143.74105834960938
+Training accuracy: 0.5647777777777776
+Vaildation accuracy: 0.49400000000000005
+Total time: 3.544938325881958
+Epoch 73
+Training loss: 116.2531127929687565
+Validation loss: 147.0634307861328
+Training accuracy: 0.5586666666666669
+Vaildation accuracy: 0.511
+Total time: 3.5218610763549805
+Epoch 74
+Training loss: 114.7761077880859459
+Validation loss: 146.16165161132812
+Training accuracy: 0.5680000000000002
+Vaildation accuracy: 0.4880000000000001
+Total time: 3.6176249980926514
+Epoch 75
+Training loss: 116.0505218505859465
+Validation loss: 150.44297790527344
+Training accuracy: 0.5647777777777777
+Vaildation accuracy: 0.4779999999999999
+Total time: 3.9540090560913086
+Epoch 76
+Training loss: 113.8654098510742247
+Validation loss: 144.52037048339844
+Training accuracy: 0.5676666666666667
+Vaildation accuracy: 0.47300000000000003
+Total time: 4.246286392211914
+Epoch 77
+8 / 10 : loss = 153.41644287109375C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Training loss: 112.24791717529297
+Validation loss: 153.05157470703125
+Training accuracy: 0.5711111111111112
+Vaildation accuracy: 0.46699999999999997
+Best validation accuracy: 0.504
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_test.py --babi_task_id 1
+2018-05-20 04:24:10.126957: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Testing DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+==> initializing variables
+==> restoring weights
+Traceback (most recent call last):
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1350, in _do_call
+    return fn(*args)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1329, in _run_fn
+    status, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework\errors_impl.py", line 473, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires shapes of both tensors to match. lhs shape= [178,80] rhs shape= [194,80]
+         [[Node: save/Assign_60 = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](DMN/Embedding, save/RestoreV2_60)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "dmn_test.py", line 52, in <module>
+    saver.restore(session, 'weights/task' + str(model.config.babi_id) + '.weights')
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 1686, in restore
+    {self.saver_def.filename_tensor_name: save_path})
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 895, in run
+    run_metadata_ptr)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1128, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1344, in _do_run
+    options, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1363, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires shapes of both tensors to match. lhs shape= [178,80] rhs shape= [194,80]
+         [[Node: save/Assign_60 = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](DMN/Embedding, save/RestoreV2_60)]]
+
+Caused by op 'save/Assign_60', defined at:
+  File "dmn_test.py", line 46, in <module>
+    saver = tf.train.Saver()
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 1239, in __init__
+    self.build()
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 1248, in build
+    self._build(self._filename, build_save=True, build_restore=True)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 1284, in _build
+    build_save=build_save, build_restore=build_restore)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 765, in _build_internal
+    restore_sequentially, reshape)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 440, in _AddRestoreOps
+    assign_ops.append(saveable.restore(tensors, shapes))
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py", line 160, in restore
+    self.op.get_shape().is_fully_defined())
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\ops\state_ops.py", line 276, in assign
+    validate_shape=validate_shape)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\ops\gen_state_ops.py", line 62, in assign
+    use_locking=use_locking, name=name)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 3160, in create_op
+    op_def=op_def)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 1625, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Assign requires shapes of both tensors to match. lhs shape= [178,80] rhs shape= [194,80]
+         [[Node: save/Assign_60 = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](DMN/Embedding, save/RestoreV2_60)]]
+
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ ^C
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in
+$ python dmn_test.py --babi_task_id 1
+2018-05-20 04:26:31.448212: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\te that this TensorFlow binary was not compiled to use: AVX AVX2
+C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning:is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).t
+  from ._conv import register_converters as _register_converters
+Testing DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networ
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networ
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+==> initializing variables
+==> restoring weights
+Traceback (most recent call last):
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    return fn(*args)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    status, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires sh
+         [[Node: save/Assign = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"],0/device:CPU:0"](DMN/DMN/Embedding/Adam, save/RestoreV2)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "dmn_test.py", line 52, in <module>
+    saver.restore(session, 'weights/task' + str(model.config.babi_id) + '.weight
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    {self.saver_def.filename_tensor_name: save_path})
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    run_metadata_ptr)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    options, run_metadata)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\client\se
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires sh
+         [[Node: save/Assign = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"],0/device:CPU:0"](DMN/DMN/Embedding/Adam, save/RestoreV2)]]
+
+Caused by op 'save/Assign', defined at:
+  File "dmn_test.py", line 46, in <module>
+    saver = tf.train.Saver()
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    self.build()
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    self._build(self._filename, build_save=True, build_restore=True)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    build_save=build_save, build_restore=build_restore)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    restore_sequentially, reshape)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    assign_ops.append(saveable.restore(tensors, shapes))
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\training\
+    self.op.get_shape().is_fully_defined())
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\ops\state
+    validate_shape=validate_shape)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\ops\gen_s
+    use_locking=use_locking, name=name)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework
+    op_def=op_def)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework
+    op_def=op_def)
+  File "C:\Users\SoSadTT\Anaconda3\lib\site-packages\tensorflow\python\framework
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-
+
+InvalidArgumentError (see above for traceback): Assign requires shapes of both t
+         [[Node: save/Assign = Assign[T=DT_FLOAT, _class=["loc:@DMN/Embedding"],0/device:CPU:0"](DMN/DMN/Embedding/Adam, save/RestoreV2)]]
+
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in
+$ python dmn_train.py --babi_task_id 1
+2018-05-20 04:35:56.374565: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Training DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+Starting run 0
+==> initializing variables
+==> starting training
+Epoch 0
+Training loss: 230.4541931152343828
+Validation loss: 194.47732543945312
+Training accuracy: 0.16577777777777783
+Vaildation accuracy: 0.192
+Saving weights
+Total time: 9.976758241653442
+Epoch 1
+Training loss: 196.5068817138672755
+Validation loss: 191.1473846435547
+Training accuracy: 0.1884444444444445
+Vaildation accuracy: 0.227
+Saving weights
+Total time: 8.372581958770752
+Epoch 2
+Training loss: 191.5535430908203062
+Validation loss: 185.3695526123047
+Training accuracy: 0.22033333333333338
+Vaildation accuracy: 0.24400000000000005
+Saving weights
+Total time: 9.937757730484009
+Epoch 3
+Training loss: 186.5933227539062525
+Validation loss: 178.3302764892578
+Training accuracy: 0.2518888888888889
+Vaildation accuracy: 0.3
+Saving weights
+Total time: 12.172910928726196
+Epoch 4
+Training loss: 177.9710998535156258
+Validation loss: 173.48367309570312
+Training accuracy: 0.3246666666666666
+Vaildation accuracy: 0.33899999999999997
+Saving weights
+Total time: 9.059950590133667
+Epoch 5
+Training loss: 174.9537963867187568
+Validation loss: 165.6869659423828
+Training accuracy: 0.35033333333333333
+Vaildation accuracy: 0.42700000000000005
+Saving weights
+Total time: 7.964080095291138
+Epoch 6
+Training loss: 167.6881713867187566
+Validation loss: 163.26766967773438
+Training accuracy: 0.40033333333333343
+Vaildation accuracy: 0.449
+Saving weights
+Total time: 8.075039625167847
+Epoch 7
+Training loss: 163.9006042480468856
+Validation loss: 160.7692413330078
+Training accuracy: 0.4255555555555557
+Vaildation accuracy: 0.45400000000000007
+Saving weights
+Total time: 8.244734287261963
+Epoch 8
+Training loss: 161.3021087646484445
+Validation loss: 158.8824920654297
+Training accuracy: 0.44511111111111107
+Vaildation accuracy: 0.477
+Saving weights
+Total time: 8.260454177856445
+Epoch 9
+Training loss: 156.8261108398437586
+Validation loss: 158.08572387695312
+Training accuracy: 0.4653333333333332
+Vaildation accuracy: 0.48999999999999994
+Saving weights
+Total time: 8.377054691314697
+Epoch 10
+Training loss: 157.7688293457031228
+Validation loss: 154.49415588378906
+Training accuracy: 0.46066666666666645
+Vaildation accuracy: 0.48100000000000004
+Saving weights
+Total time: 7.7668304443359375
+Epoch 11
+Training loss: 154.3709259033203256
+Validation loss: 156.36915588378906
+Training accuracy: 0.47944444444444434
+Vaildation accuracy: 0.491
+Total time: 3.6619699001312256
+Epoch 12
+Training loss: 154.0405731201172124
+Validation loss: 155.23728942871094
+Training accuracy: 0.477777777777778
+Vaildation accuracy: 0.473
+Total time: 3.8002705574035645
+Epoch 13
+Training loss: 152.3940734863281224
+Validation loss: 149.93829345703125
+Training accuracy: 0.4878888888888893
+Vaildation accuracy: 0.499
+Saving weights
+Total time: 7.531168222427368
+Epoch 14
+Training loss: 151.2319030761718854
+Validation loss: 152.16885375976562
+Training accuracy: 0.49522222222222206
+Vaildation accuracy: 0.5109999999999999
+Total time: 3.713538646697998
+Epoch 15
+Training loss: 149.1884155273437586
+Validation loss: 148.39926147460938
+Training accuracy: 0.5004444444444442
+Vaildation accuracy: 0.5130000000000001
+Saving weights
+Total time: 9.039977073669434
+Epoch 16
+Training loss: 148.5807037353515658
+Validation loss: 151.542236328125
+Training accuracy: 0.4965555555555556
+Vaildation accuracy: 0.49700000000000005
+Total time: 5.373366355895996
+Epoch 17
+Training loss: 148.5928039550781264
+Validation loss: 148.0340118408203
+Training accuracy: 0.491888888888889
+Vaildation accuracy: 0.496
+Saving weights
+Total time: 10.762554407119751
+Epoch 18
+Training loss: 147.0385284423828284
+Validation loss: 146.21002197265625
+Training accuracy: 0.505
+Vaildation accuracy: 0.5149999999999999
+Saving weights
+Total time: 11.100896120071411
+Epoch 19
+Training loss: 146.9054412841797854
+Validation loss: 143.68002319335938
+Training accuracy: 0.49700000000000005
+Vaildation accuracy: 0.5189999999999999
+Saving weights
+Total time: 12.040574789047241
+Epoch 20
+Training loss: 144.5871124267578884
+Validation loss: 145.48165893554688
+Training accuracy: 0.5042222222222222
+Vaildation accuracy: 0.5090000000000001
+Total time: 5.591417074203491
+Epoch 21
+Training loss: 144.4356842041015626
+Validation loss: 146.38131713867188
+Training accuracy: 0.5067777777777779
+Vaildation accuracy: 0.515
+Total time: 5.659760236740112
+Epoch 22
+Training loss: 143.5410308837890624
+Validation loss: 146.4347686767578
+Training accuracy: 0.5053333333333334
+Vaildation accuracy: 0.503
+Total time: 6.009581089019775
+Epoch 23
+Training loss: 143.3653869628906282
+Validation loss: 146.41123962402344
+Training accuracy: 0.5094444444444446
+Vaildation accuracy: 0.499
+Total time: 5.8295910358428955
+Epoch 24
+Training loss: 141.2737579345703258
+Validation loss: 147.4715576171875
+Training accuracy: 0.5098888888888891
+Vaildation accuracy: 0.502
+Total time: 5.8110575675964355
+Epoch 25
+Training loss: 140.2099456787109458
+Validation loss: 147.37107849121094
+Training accuracy: 0.509888888888889
+Vaildation accuracy: 0.508
+Total time: 5.718278884887695
+Epoch 26
+Training loss: 140.0263824462890656
+Validation loss: 143.37071228027344
+Training accuracy: 0.5115555555555557
+Vaildation accuracy: 0.514
+Saving weights
+Total time: 12.180473566055298
+Epoch 27
+Training loss: 138.2194976806640658
+Validation loss: 142.28892517089844
+Training accuracy: 0.5224444444444447
+Vaildation accuracy: 0.505
+Saving weights
+Total time: 11.944197416305542
+Epoch 28
+Training loss: 137.2493438720703872
+Validation loss: 144.8238067626953
+Training accuracy: 0.5212222222222223
+Vaildation accuracy: 0.504
+Total time: 5.495713472366333
+Epoch 29
+Training loss: 138.7366485595703626
+Validation loss: 143.91488647460938
+Training accuracy: 0.5106666666666665
+Vaildation accuracy: 0.5120000000000001
+Total time: 5.75946044921875
+Epoch 30
+Training loss: 136.6627349853515644
+Validation loss: 145.0033416748047
+Training accuracy: 0.5226666666666664
+Vaildation accuracy: 0.506
+Total time: 5.804715871810913
+Epoch 31
+Training loss: 136.5286865234375752
+Validation loss: 142.8888702392578
+Training accuracy: 0.5195555555555558
+Vaildation accuracy: 0.5109999999999999
+Total time: 5.206534147262573
+Epoch 32
+Training loss: 136.1478881835937524
+Validation loss: 144.51756286621094
+Training accuracy: 0.5210000000000001
+Vaildation accuracy: 0.5120000000000001
+Total time: 3.949108123779297
+Epoch 33
+Training loss: 135.1695709228515626
+Validation loss: 143.56216430664062
+Training accuracy: 0.5201111111111112
+Vaildation accuracy: 0.5109999999999999
+Total time: 5.424485921859741
+Epoch 34
+Training loss: 133.0038757324218885
+Validation loss: 143.2710723876953
+Training accuracy: 0.5312222222222225
+Vaildation accuracy: 0.5120000000000001
+Total time: 5.708260536193848
+Epoch 35
+Training loss: 134.2137298583984484
+Validation loss: 145.4998779296875
+Training accuracy: 0.5244444444444443
+Vaildation accuracy: 0.512
+Total time: 5.596312522888184
+Epoch 36
+Training loss: 132.5427246093756252
+Validation loss: 142.37266540527344
+Training accuracy: 0.5272222222222223
+Vaildation accuracy: 0.5050000000000001
+Total time: 5.821603298187256
+Epoch 37
+Training loss: 132.1314849853515658
+Validation loss: 146.17111206054688
+Training accuracy: 0.5254444444444442
+Vaildation accuracy: 0.501
+Total time: 5.836010932922363
+Epoch 38
+Training loss: 131.4720458984375268
+Validation loss: 141.02630615234375
+Training accuracy: 0.5211111111111112
+Vaildation accuracy: 0.5029999999999999
+Saving weights
+Total time: 12.206859588623047
+Epoch 39
+Training loss: 130.9106292724609458
+Validation loss: 143.6412353515625
+Training accuracy: 0.529777777777778
+Vaildation accuracy: 0.5090000000000001
+Total time: 5.661733388900757
+Epoch 40
+Training loss: 130.1061096191406222
+Validation loss: 142.8030242919922
+Training accuracy: 0.528444444444444
+Vaildation accuracy: 0.503
+Total time: 5.753839731216431
+Epoch 41
+Training loss: 128.7848205566406252
+Validation loss: 145.62832641601562
+Training accuracy: 0.5305555555555559
+Vaildation accuracy: 0.495
+Total time: 5.696245431900024
+Epoch 42
+Training loss: 129.5536193847656264
+Validation loss: 139.33840942382812
+Training accuracy: 0.534777777777778
+Vaildation accuracy: 0.517
+Saving weights
+Total time: 12.299385070800781
+Epoch 43
+Training loss: 128.2687835693359456
+Validation loss: 142.35336303710938
+Training accuracy: 0.5363333333333333
+Vaildation accuracy: 0.4880000000000001
+Total time: 5.8021399974823
+Epoch 44
+Training loss: 126.3406372070312522
+Validation loss: 144.4478759765625
+Training accuracy: 0.5353333333333334
+Vaildation accuracy: 0.495
+Total time: 5.514228820800781
+Epoch 45
+Training loss: 128.3430328369140648
+Validation loss: 141.7122344970703
+Training accuracy: 0.5312222222222224
+Vaildation accuracy: 0.4960000000000001
+Total time: 5.489695310592651
+Epoch 46
+Training loss: 126.6724166870117249
+Validation loss: 147.94003295898438
+Training accuracy: 0.5356666666666668
+Vaildation accuracy: 0.5039999999999999
+Total time: 5.597562551498413
+Epoch 47
+Training loss: 127.9463424682617228
+Validation loss: 146.64329528808594
+Training accuracy: 0.5380000000000001
+Vaildation accuracy: 0.499
+Total time: 5.817237138748169
+Epoch 48
+Training loss: 127.4699096679687528
+Validation loss: 142.6123809814453
+Training accuracy: 0.5375555555555553
+Vaildation accuracy: 0.511
+Total time: 4.828026056289673
+Epoch 49
+Training loss: 124.7573547363281251
+Validation loss: 147.65859985351562
+Training accuracy: 0.5423333333333334
+Vaildation accuracy: 0.48100000000000004
+Total time: 4.509516000747681
+Epoch 50
+Training loss: 124.2183303833007889
+Validation loss: 144.68734741210938
+Training accuracy: 0.543777777777778
+Vaildation accuracy: 0.48599999999999993
+Total time: 5.480565786361694
+Epoch 51
+Training loss: 124.2023544311523453
+Validation loss: 143.16244506835938
+Training accuracy: 0.5385555555555557
+Vaildation accuracy: 0.488
+Total time: 5.663628339767456
+Epoch 52
+Training loss: 123.4482192993164756
+Validation loss: 144.7456817626953
+Training accuracy: 0.5482222222222225
+Vaildation accuracy: 0.496
+Total time: 5.61348557472229
+Epoch 53
+Training loss: 124.3523864746093866
+Validation loss: 141.04165649414062
+Training accuracy: 0.5406666666666666
+Vaildation accuracy: 0.493
+Total time: 5.734553337097168
+Epoch 54
+Training loss: 121.4823989868164562
+Validation loss: 144.54307556152344
+Training accuracy: 0.5481111111111112
+Vaildation accuracy: 0.5130000000000001
+Total time: 5.648646116256714
+Epoch 55
+Training loss: 121.6161575317382884
+Validation loss: 140.9563446044922
+Training accuracy: 0.5476666666666667
+Vaildation accuracy: 0.48200000000000004
+Total time: 5.605525732040405
+Epoch 56
+Training loss: 120.0350723266601644
+Validation loss: 143.0137939453125
+Training accuracy: 0.5522222222222221
+Vaildation accuracy: 0.497
+Total time: 5.5768022537231445
+Epoch 57
+Training loss: 120.3628387451171953
+Validation loss: 142.35891723632812
+Training accuracy: 0.5492222222222222
+Vaildation accuracy: 0.48900000000000005
+Total time: 5.616424322128296
+Epoch 58
+Training loss: 120.7070770263671955
+Validation loss: 143.53781127929688
+Training accuracy: 0.5503333333333333
+Vaildation accuracy: 0.495
+Total time: 5.814533472061157
+Epoch 59
+Training loss: 119.3404846191406244
+Validation loss: 144.80294799804688
+Training accuracy: 0.5502222222222225
+Vaildation accuracy: 0.48900000000000005
+Total time: 5.696307182312012
+Epoch 60
+Training loss: 118.8594207763671942
+Validation loss: 145.40219116210938
+Training accuracy: 0.549666666666667
+Vaildation accuracy: 0.491
+Total time: 5.766958475112915
+Epoch 61
+Training loss: 118.3074340820312568
+Validation loss: 146.8812713623047
+Training accuracy: 0.5574444444444444
+Vaildation accuracy: 0.48900000000000005
+Total time: 5.756924867630005
+Epoch 62
+Training loss: 117.4400177001953146
+Validation loss: 146.09532165527344
+Training accuracy: 0.5543333333333335
+Vaildation accuracy: 0.49899999999999994
+Total time: 5.738921403884888
+Epoch 63
+8 / 10 : loss = 144.43630981445312C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Training loss: 116.62312316894531
+Validation loss: 144.46444702148438
+Training accuracy: 0.5594444444444445
+Vaildation accuracy: 0.499
+Best validation accuracy: 0.517
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_test.py --babi_task_id 1
+2018-05-20 04:46:10.003016: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Testing DMN plus on babi task 1
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa1_single-supporting-fact_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+==> initializing variables
+==> restoring weights
+==> running DMN
+8 / 10 : loss = 143.216796875C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Test accuracy: 0.47800000000000004
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_test.py --babi_task_id 5
+Stopped
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_train.py --babi_task_id 5
+2018-05-20 19:34:20.033961: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Training DMN plus on babi task 5
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+Starting run 0
+==> initializing variables
+==> starting training
+Epoch 0
+Training loss: 207.9161834716797675
+Validation loss: 147.02503967285156
+Training accuracy: 0.28344444444444444
+Vaildation accuracy: 0.3757142857142857
+Saving weights
+Total time: 41.02504348754883
+Epoch 1
+Training loss: 145.5454254150390678
+Validation loss: 139.25071716308594
+Training accuracy: 0.3256666666666667
+Vaildation accuracy: 0.35571428571428576
+Saving weights
+Total time: 40.49362325668335
+Epoch 2
+Training loss: 139.9870300292968812
+Validation loss: 136.7428741455078
+Training accuracy: 0.33155555555555544
+Vaildation accuracy: 0.3457142857142857
+Saving weights
+Total time: 41.9665424823761
+Epoch 3
+Training loss: 136.1033477783203806
+Validation loss: 134.7662811279297
+Training accuracy: 0.3346666666666666
+Vaildation accuracy: 0.3228571428571429
+Saving weights
+Total time: 41.221561908721924
+Epoch 4
+Training loss: 133.6270446777343885
+Validation loss: 131.8118133544922
+Training accuracy: 0.34455555555555545
+Vaildation accuracy: 0.3485714285714286
+Saving weights
+Total time: 41.180452823638916
+Epoch 5
+Training loss: 131.1119079589843894
+Validation loss: 129.98361206054688
+Training accuracy: 0.3432222222222222
+Vaildation accuracy: 0.3371428571428571
+Saving weights
+Total time: 40.52077794075012
+Epoch 6
+Training loss: 130.0085144042968858
+Validation loss: 130.53677368164062
+Training accuracy: 0.34277777777777774
+Vaildation accuracy: 0.32285714285714284
+Total time: 34.05952477455139
+Epoch 7
+Training loss: 128.3687438964843812
+Validation loss: 127.23723602294922
+Training accuracy: 0.3433333333333333
+Vaildation accuracy: 0.35857142857142854
+Saving weights
+Total time: 31.98326802253723
+Epoch 8
+Training loss: 127.5768585205078106
+Validation loss: 126.8092269897461
+Training accuracy: 0.34377777777777785
+Vaildation accuracy: 0.3071428571428571
+Saving weights
+Total time: 41.88668346405029
+Epoch 9
+Training loss: 126.3865661621093847
+Validation loss: 126.44788360595703
+Training accuracy: 0.34166666666666656
+Vaildation accuracy: 0.37000000000000005
+Saving weights
+Total time: 41.27716588973999
+Epoch 10
+Training loss: 125.4841613769531275
+Validation loss: 125.82844543457031
+Training accuracy: 0.3491111111111109
+Vaildation accuracy: 0.35285714285714287
+Saving weights
+Total time: 35.69938087463379
+Epoch 11
+Training loss: 124.6645202636718853
+Validation loss: 124.61481475830078
+Training accuracy: 0.35633333333333334
+Vaildation accuracy: 0.32571428571428573
+Saving weights
+Total time: 34.60281538963318
+Epoch 12
+Training loss: 124.1750869750976638
+Validation loss: 124.30806732177734
+Training accuracy: 0.3513333333333332
+Vaildation accuracy: 0.3385714285714286
+Saving weights
+Total time: 35.786213874816895
+Epoch 13
+Training loss: 123.5843124389648466
+Validation loss: 126.0639419555664
+Training accuracy: 0.34599999999999986
+Vaildation accuracy: 0.32
+Total time: 29.17370104789734
+Epoch 14
+Training loss: 123.2757034301757894
+Validation loss: 124.34033966064453
+Training accuracy: 0.35544444444444445
+Vaildation accuracy: 0.3385714285714286
+Total time: 28.85080885887146
+Epoch 15
+Training loss: 122.7864074707031297
+Validation loss: 123.72430419921875
+Training accuracy: 0.3553333333333334
+Vaildation accuracy: 0.33571428571428574
+Saving weights
+Total time: 35.20258927345276
+Epoch 16
+Training loss: 122.3384017944336747
+Validation loss: 123.54186248779297
+Training accuracy: 0.34800000000000003
+Vaildation accuracy: 0.3414285714285715
+Saving weights
+Total time: 36.16419076919556
+Epoch 17
+Training loss: 122.0404739379882869
+Validation loss: 123.555908203125
+Training accuracy: 0.3555555555555556
+Vaildation accuracy: 0.3485714285714286
+Total time: 28.974508047103882
+Epoch 18
+Training loss: 122.1009674072265634
+Validation loss: 122.98387908935547
+Training accuracy: 0.3545555555555555
+Vaildation accuracy: 0.3428571428571429
+Saving weights
+Total time: 36.25269794464111
+Epoch 19
+Training loss: 121.6763992309570319
+Validation loss: 122.18537139892578
+Training accuracy: 0.3586666666666666
+Vaildation accuracy: 0.3157142857142857
+Saving weights
+Total time: 36.10703182220459
+Epoch 20
+Training loss: 121.5862503051757834
+Validation loss: 121.38072204589844
+Training accuracy: 0.3465555555555556
+Vaildation accuracy: 0.3528571428571428
+Saving weights
+Total time: 37.050938844680786
+Epoch 21
+Training loss: 121.1597747802734422
+Validation loss: 121.51451873779297
+Training accuracy: 0.35444444444444445
+Vaildation accuracy: 0.3385714285714286
+Total time: 31.931770086288452
+Epoch 22
+Training loss: 121.1256637573242242
+Validation loss: 120.15128326416016
+Training accuracy: 0.3554444444444443
+Vaildation accuracy: 0.3885714285714286
+Saving weights
+Total time: 38.32272148132324
+Epoch 23
+Training loss: 121.0391387939453181
+Validation loss: 121.28063201904297
+Training accuracy: 0.3547777777777777
+Vaildation accuracy: 0.35714285714285715
+Total time: 33.36830282211304
+Epoch 24
+Training loss: 121.2723236083984434
+Validation loss: 122.20326232910156
+Training accuracy: 0.3446666666666667
+Vaildation accuracy: 0.3071428571428571
+Total time: 32.92161703109741
+Epoch 25
+Training loss: 120.8084411621093834
+Validation loss: 122.1887435913086
+Training accuracy: 0.3558888888888889
+Vaildation accuracy: 0.31428571428571433
+Total time: 31.5146164894104
+Epoch 26
+Training loss: 120.7751159667968831
+Validation loss: 121.23463439941406
+Training accuracy: 0.354
+Vaildation accuracy: 0.31285714285714283
+Total time: 31.22582983970642
+Epoch 27
+Training loss: 120.9310302734375817
+Validation loss: 120.83307647705078
+Training accuracy: 0.3543333333333332
+Vaildation accuracy: 0.37285714285714283
+Total time: 31.10689687728882
+Epoch 28
+Training loss: 120.6804504394531269
+Validation loss: 121.0235824584961
+Training accuracy: 0.35455555555555546
+Vaildation accuracy: 0.34142857142857136
+Total time: 31.05692481994629
+Epoch 29
+Training loss: 120.6058197021484419
+Validation loss: 122.47454071044922
+Training accuracy: 0.35477777777777775
+Vaildation accuracy: 0.27999999999999997
+Total time: 27.72645401954651
+Epoch 30
+Training loss: 120.8100662231445303
+Validation loss: 121.20802307128906
+Training accuracy: 0.34877777777777774
+Vaildation accuracy: 0.33571428571428574
+Total time: 19.08063292503357
+Epoch 31
+Training loss: 120.4760284423828196
+Validation loss: 121.56500244140625
+Training accuracy: 0.3592222222222221
+Vaildation accuracy: 0.35428571428571426
+Total time: 18.53479242324829
+Epoch 32
+Training loss: 120.5370788574218872
+Validation loss: 121.47261047363281
+Training accuracy: 0.3552222222222223
+Vaildation accuracy: 0.3457142857142857
+Total time: 18.648422241210938
+Epoch 33
+Training loss: 120.4293823242187516
+Validation loss: 122.40174865722656
+Training accuracy: 0.3573333333333333
+Vaildation accuracy: 0.2928571428571428
+Total time: 21.175044536590576
+Epoch 34
+Training loss: 120.2450103759765669
+Validation loss: 121.1995849609375
+Training accuracy: 0.35522222222222216
+Vaildation accuracy: 0.34714285714285714
+Total time: 30.61207389831543
+Epoch 35
+Training loss: 120.2648086547851666
+Validation loss: 121.3536148071289
+Training accuracy: 0.36277777777777787
+Vaildation accuracy: 0.3371428571428572
+Total time: 29.154376745224
+Epoch 36
+Training loss: 120.3141174316406294
+Validation loss: 121.4550552368164
+Training accuracy: 0.3606666666666667
+Vaildation accuracy: 0.3485714285714285
+Total time: 32.14573526382446
+Epoch 37
+Training loss: 120.4056015014648497
+Validation loss: 121.29585266113281
+Training accuracy: 0.36100000000000004
+Vaildation accuracy: 0.35571428571428576
+Total time: 30.701941967010498
+Epoch 38
+Training loss: 120.4003829956054745
+Validation loss: 123.56908416748047
+Training accuracy: 0.35111111111111115
+Vaildation accuracy: 0.34285714285714286
+Total time: 30.787161350250244
+Epoch 39
+Training loss: 120.3187637329101653
+Validation loss: 120.89441680908203
+Training accuracy: 0.36000000000000004
+Vaildation accuracy: 0.3457142857142857
+Total time: 31.50637125968933
+Epoch 40
+Training loss: 120.0747604370117244
+Validation loss: 121.53724670410156
+Training accuracy: 0.3587777777777776
+Vaildation accuracy: 0.3314285714285714
+Total time: 31.32845640182495
+Epoch 41
+Training loss: 120.1796875543945319
+Validation loss: 120.19727325439453
+Training accuracy: 0.35755555555555557
+Vaildation accuracy: 0.3628571428571429
+Total time: 30.96882677078247
+Epoch 42
+Training loss: 120.3834609985351653
+Validation loss: 121.45386505126953
+Training accuracy: 0.3513333333333332
+Vaildation accuracy: 0.3271428571428571
+Total time: 31.52320146560669
+Epoch 43
+6 / 7 : loss = 122.33939361572266C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Training loss: 120.31929016113281
+Validation loss: 122.33939361572266
+Training accuracy: 0.3543333333333333
+Vaildation accuracy: 0.34285714285714286
+Best validation accuracy: 0.3885714285714286
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_test.py --babi_task_id 5
+2018-05-20 20:02:50.383982: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Testing DMN plus on babi task 5
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+==> initializing variables
+==> restoring weights
+==> running DMN
+8 / 9 : loss = 122.16962432861328C:\Users\SoSadTT\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Test accuracy: 0.33222222222222225
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$ python dmn_train.py --babi_task_id 5
+2018-05-20 20:09:48.496939: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Training DMN plus on babi task 5
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_train.txt
+==> Loading test from C:\Users\SoSadTT\Desktop\class_PJ_AI\Dynamic-Memory-Networks-in-TensorFlow\data/en-10k/qa5_three-arg-relations_test.txt
+==> get train inputs
+==> get test inputs
+==> get question representation
+==> get input representation
+==> build episodic memory
+==> generating episode 0
+==> generating episode 1
+==> generating episode 2
+Starting run 0
+==> initializing variables
+==> starting training
+Epoch 0
+Training loss: 125.4873275756836448
+Validation loss: 45.10173416137695
+Training accuracy: 0.5002222222222221
+Vaildation accuracy: 0.7949999999999999
+Saving weights
+Total time: 324.0596446990967
+Epoch 1
+Training loss: 38.05871200561523456
+Validation loss: 29.044897079467773
+Training accuracy: 0.8178888888888892
+Vaildation accuracy: 0.8460000000000001
+Saving weights
+Total time: 278.273841381073
+Epoch 2
+Training loss: 29.59958839416504642
+Validation loss: 23.35530662536621
+Training accuracy: 0.8482222222222221
+Vaildation accuracy: 0.901
+Saving weights
+Total time: 270.3981614112854
+Epoch 3
+Training loss: 19.37476158142093653
+Validation loss: 12.672150611877441
+Training accuracy: 0.9269999999999996
+Vaildation accuracy: 0.9639999999999999
+Saving weights
+Total time: 419.5615780353546
+Epoch 4
+Training loss: 10.69809246063232459
+Validation loss: 7.6944074630737305
+Training accuracy: 0.9785555555555547
+Vaildation accuracy: 0.9880000000000001
+Saving weights
+Total time: 437.604984998703
+Epoch 5
+Training loss: 6.809324264526367965
+Validation loss: 6.9730634689331055
+Training accuracy: 0.9923333333333331
+Vaildation accuracy: 0.992
+Saving weights
+Total time: 450.4923117160797
+Epoch 6
+Training loss: 5.202048301696777485
+Validation loss: 5.750378608703613
+Training accuracy: 0.9942222222222217
+Vaildation accuracy: 0.993
+Saving weights
+Total time: 465.91030383110046
+Epoch 7
+Training loss: 4.270586013793945335
+Validation loss: 5.584170341491699
+Training accuracy: 0.9962222222222219
+Vaildation accuracy: 0.9930000000000001
+Saving weights
+Total time: 430.16248965263367
+Epoch 8
+Training loss: 3.595524072647094794
+Validation loss: 4.862764358520508
+Training accuracy: 0.9972222222222219
+Vaildation accuracy: 0.9960000000000001
+Saving weights
+Total time: 415.09576964378357
+Epoch 9
+Training loss: 3.392297983169555744
+Validation loss: 4.578986167907715
+Training accuracy: 0.997222222222222
+Vaildation accuracy: 0.994
+Saving weights
+Total time: 275.18684244155884
+Epoch 10
+Training loss: 3.161870718002319368
+Validation loss: 4.364711761474609
+Training accuracy: 0.9979999999999999
+Vaildation accuracy: 0.9970000000000001
+Saving weights
+Total time: 260.5945465564728
+Epoch 11
+Training loss: 2.946845054626465756
+Validation loss: 3.569056987762451
+Training accuracy: 0.9982222222222219
+Vaildation accuracy: 0.9960000000000001
+Saving weights
+Total time: 262.09915375709534
+Epoch 12
+Training loss: 3.466385841369629557
+Validation loss: 5.173287391662598
+Training accuracy: 0.9976666666666661
+Vaildation accuracy: 0.9959999999999999
+Total time: 247.50523447990417
+Epoch 13
+Training loss: 3.131113052368164176
+Validation loss: 4.0420026779174805
+Training accuracy: 0.9977777777777774
+Vaildation accuracy: 0.9949999999999999
+Total time: 248.3780779838562
+Epoch 14
+Training loss: 2.938163995742798954
+Validation loss: 5.16000509262085
+Training accuracy: 0.9981111111111111
+Vaildation accuracy: 0.9960000000000001
+Total time: 256.06293964385986
+Epoch 15
+Training loss: 2.835942983627319355
+Validation loss: 5.153891563415527
+Training accuracy: 0.9986666666666665
+Vaildation accuracy: 0.9949999999999999
+Total time: 258.7832045555115
+Epoch 16
+Training loss: 2.479083776473999744
+Validation loss: 4.3680524826049805
+Training accuracy: 0.9995555555555555
+Vaildation accuracy: 0.9970000000000001
+Total time: 271.12993907928467
+Epoch 17
+Training loss: 2.556570768356323217
+Validation loss: 5.740267276763916
+Training accuracy: 0.9991111111111112
+Vaildation accuracy: 0.9960000000000001
+Total time: 264.9118883609772
+Epoch 18
+Training loss: 2.592633724212646535
+Validation loss: 5.3806304931640625
+Training accuracy: 0.9993333333333333
+Vaildation accuracy: 0.993
+Total time: 267.3215436935425
+Epoch 19
+Training loss: 2.373323678970337796
+Validation loss: 5.209349632263184
+Training accuracy: 0.9998888888888889
+Vaildation accuracy: 0.9950000000000001
+Total time: 274.21820640563965
+Epoch 20
+Training loss: 2.431517601013183634
+Validation loss: 3.5759475231170654
+Training accuracy: 0.9991111111111108
+Vaildation accuracy: 0.9970000000000001
+Total time: 286.98474645614624
+Epoch 21
+Training loss: 2.963618040084839953
+Validation loss: 9.03451919555664
+Training accuracy: 0.9978888888888886
+Vaildation accuracy: 0.9920000000000002
+Total time: 279.4931309223175
+Epoch 22
+Training loss: 3.737354755401611367
+Validation loss: 5.163540363311768
+Training accuracy: 0.9957777777777773
+Vaildation accuracy: 0.9950000000000001
+Total time: 276.3114278316498
+Epoch 23
+Training loss: 2.983648777008056657
+Validation loss: 4.2312235832214355
+Training accuracy: 0.9981111111111111
+Vaildation accuracy: 0.9950000000000001
+Total time: 288.8272166252136
+Epoch 24
+Training loss: 2.471079587936401466
+Validation loss: 3.2724387645721436
+Training accuracy: 0.9992222222222221
+Vaildation accuracy: 0.9970000000000001
+Saving weights
+Total time: 317.8705279827118
+Epoch 25
+Training loss: 2.535196065902711053
+Validation loss: 3.130078077316284
+Training accuracy: 0.9992222222222221
+Vaildation accuracy: 0.998
+Saving weights
+Total time: 322.6102545261383
+Epoch 26
+Training loss: 2.208622455596924255
+Validation loss: 6.119549751281738
+Training accuracy: 0.9998888888888889
+Vaildation accuracy: 0.9950000000000001
+Total time: 361.7747173309326
+Epoch 27
+Training loss: 2.242569208145141654
+Validation loss: 4.2872114181518555
+Training accuracy: 0.9998888888888888
+Vaildation accuracy: 0.9949999999999999
+Total time: 365.88046979904175
+Epoch 28
+Training loss: 2.465350866317749746
+Validation loss: 4.58473014831543
+Training accuracy: 0.999111111111111
+Vaildation accuracy: 0.9970000000000001
+Total time: 379.07818031311035
+Epoch 29
+Training loss: 2.718786716461181657
+Validation loss: 6.3025803565979
+Training accuracy: 0.9984444444444446
+Vaildation accuracy: 0.9940000000000001
+Total time: 358.86476612091064
+Epoch 30
+Training loss: 2.851407766342163816
+Validation loss: 5.608988285064697
+Training accuracy: 0.9973333333333331
+Vaildation accuracy: 0.993
+Total time: 318.5995411872864
+Epoch 31
+Training loss: 2.919647216796875554
+Validation loss: 5.089592933654785
+Training accuracy: 0.9975555555555551
+Vaildation accuracy: 0.9950000000000001
+Total time: 327.00610852241516
+Epoch 32
+Training loss: 2.339279413223266613
+Validation loss: 6.359178066253662
+Training accuracy: 0.9995555555555555
+Vaildation accuracy: 0.9949999999999999
+Total time: 341.5089430809021
+Epoch 33
+Training loss: 2.253023624420166977
+Validation loss: 5.398849964141846
+Training accuracy: 0.9996666666666665
+Vaildation accuracy: 0.9949999999999999
+Total time: 403.45318484306335
+Epoch 34
+Training loss: 2.159201860427856433
+Validation loss: 5.715939521789551
+Training accuracy: 0.9997777777777777
+Vaildation accuracy: 0.994
+Total time: 404.13736152648926
+Epoch 35
+Training loss: 2.257924556732177787
+Validation loss: 3.622168779373169
+Training accuracy: 0.9993333333333332
+Vaildation accuracy: 0.9960000000000001
+Total time: 461.98882126808167
+Epoch 36
+Training loss: 2.101914882659912363
+Validation loss: 4.001074314117432
+Training accuracy: 0.9998888888888889
+Vaildation accuracy: 0.9960000000000001
+Total time: 469.4315288066864
+Epoch 37
+Training loss: 2.084627866744995735
+Validation loss: 4.280196666717529
+Training accuracy: 0.9998888888888888
+Vaildation accuracy: 0.9960000000000001
+Total time: 466.7034785747528
+Epoch 38
+Training loss: 2.254416942596435548
+Validation loss: 4.711848258972168
+Training accuracy: 0.9992222222222223
+Vaildation accuracy: 0.9960000000000001
+Total time: 474.3715636730194
+Epoch 39
+Training loss: 2.114738225936889675
+Validation loss: 2.8419463634490967
+Training accuracy: 0.9998888888888889
+Vaildation accuracy: 0.9970000000000001
+Saving weights
+Total time: 519.853440284729
+Epoch 40
+Training loss: 2.460532188415527326
+Validation loss: 3.727753162384033
+Training accuracy: 0.9983333333333334
+Vaildation accuracy: 0.9960000000000001
+Total time: 511.8954679965973
+Epoch 41
+Training loss: 2.360125303268432656
+Validation loss: 4.8981475830078125
+Training accuracy: 0.9989999999999998
+Vaildation accuracy: 0.9960000000000001
+Total time: 518.269627571106
+Epoch 42
+Training loss: 2.119258403778076377
+Validation loss: 5.037475109100342
+Training accuracy: 0.9995555555555555
+Vaildation accuracy: 0.9949999999999999
+Total time: 3099.6415033340454
+Epoch 43
+Training loss: 2.216138362884521564
+Validation loss: 3.559262752532959
+Training accuracy: 0.9995555555555553
+Vaildation accuracy: 0.9970000000000001
+Total time: 866.9965133666992
+Epoch 44
+8 / 10 : loss = 3.30947327613830574
+
+SoSadTT@LAPTOP-OPLCU1EG MINGW64 ~/Desktop/class_PJ_AI/Dynamic-Memory-Networks-in-TensorFlow (master)
+$

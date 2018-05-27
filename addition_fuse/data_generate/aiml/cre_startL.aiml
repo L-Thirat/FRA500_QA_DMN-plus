@@ -1,0 +1,86 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>สวัสดี</pattern>
+		<template>สวัสดีค่ะ</template>
+	</category>
+	<category>
+		<pattern> _ สวัสดี</pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern> _ สวัสดี * </pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern>สวัสดี * </pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern>หวัดดี</pattern>
+		<template><random>
+			<li>เธอชอบเป็นหวัดหรอ แปลกคนจัง</li>
+			<li>คนที่แอลรู้จักนี้เป็นหวัดแล้วไม่ค่อยดีนะ</li>
+			<li>แนะนำว่าให้ไปหาหมอเถอะนะจ้ะ :)</li>
+		</random></template>
+	</category>
+	<category>
+		<pattern> _ หวัดดี</pattern>
+		<template><srai>หวัดดี</srai></template>
+	</category>
+	<category>
+		<pattern> _ หวัดดี * </pattern>
+		<template><srai>หวัดดี</srai></template>
+	</category>
+	<category>
+		<pattern>หวัดดี * </pattern>
+		<template><srai>หวัดดี</srai></template>
+	</category>
+	<category>
+		<pattern>ดี</pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern> _ ดี</pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern> _ ดี * </pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern>ดี * </pattern>
+		<template><srai>สวัสดี</srai></template>
+	</category>
+	<category>
+		<pattern>สวัสดี</pattern>
+		<that>สวัสดีค่ะ</that>
+		<template>จะสวัสดีอีกนานมั้ย</template>
+	</category>
+	<category>
+		<pattern>สวัสดี * </pattern>
+		<that>สวัสดีค่ะ</that>
+		<template>จะสวัสดีอีกนานมั้ย</template>
+	</category>
+	<category>
+		<pattern> * </pattern>
+		<that>สวัสดีค่ะ</that>
+		<template>ชื่ออะไรกันบ้างหรอ</template>
+	</category>
+	<category>
+		<pattern>เรา * นะ</pattern>
+		<template>ยินดีที่ได้รุจัก<set name="nameUser"><star/>จ้าา</set></template>
+	</category>
+	<category>
+		<pattern>เรา * </pattern>
+		<template>ยินดีที่ได้รุจัก<set name="nameUser"><star/>จ้าา</set></template>
+	</category>
+	<category>
+		<pattern> * นะ</pattern>
+		<template>ยินดีที่ได้รุจัก<set name="nameUser"><star/>จ้าา</set></template>
+	</category>
+	<category>
+		<pattern>เช่นกัน * </pattern>
+		<that>ยินดีที่ได้รุจัก<set name="nameUser"><star/>จ้าา</set></that>
+		<template>แอลอยากจะแนะนำ</template>
+	</category>
+</aiml>

@@ -1,0 +1,94 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>กากจัง</pattern>
+		<template>กก กาก</template>
+	</category>
+	<category>
+		<pattern>ฉันชอบ *  กับ * </pattern>
+		<template>เราก็ชอบ<star index="2"/> กับ <star index="1"/>เหมือนกัน</template>
+	</category>
+	<category>
+		<pattern>แอลรู้ไหม ฟิว กลัวอะไร</pattern>
+		<template>หมาไง</template>
+	</category>
+	<category>
+		<pattern>แอลรู้ไหม * กลัวอะไร</pattern>
+		<template><srai>กลัว<star/></srai></template>
+	</category>
+	<category>
+		<pattern>กก</pattern>
+		<template>น่ารัก</template>
+	</category>
+	<category>
+		<pattern>แฟนฟิวส์</pattern>
+		<template><srai>กก</srai></template>
+	</category>
+	<category>
+		<pattern>กก * </pattern>
+		<template><srai>กก</srai></template>
+	</category>
+	<category>
+		<pattern> _ กก</pattern>
+		<template><srai>กก</srai></template>
+	</category>
+	<category>
+		<pattern> _ กก * </pattern>
+		<template><srai>กก</srai></template>
+	</category>
+	<category>
+		<pattern>หวัดดี</pattern>
+		<template><random>
+			<li>หวัดดีเจ้า</li>
+			<li>หวัดดีงิ</li>
+			<li>หวัดดีฮะ</li>
+			<li>สวัสดี</li>
+		</random></template>
+	</category>
+	<category>
+		<pattern>หวัดดีแอล เราชื่อ * นะ</pattern>
+		<template>เป็นไง<set name="nameUser"><star/></set></template>
+	</category>
+	<category>
+		<pattern>ฝันดี</pattern>
+		<template>ฝันดีนะ<get name="nameUser"/></template>
+	</category>
+	<category>
+		<pattern>ทำอะไรอยู่อ่ะ</pattern>
+		<template>ดูหนังจ้า มาดูด้วยกันมั้ย</template>
+	</category>
+	<category>
+		<pattern>ก็ดีนะ _ </pattern>
+		<that>ดูหนังจ้า มาดูด้วยกันมั้ย</that>
+		<template>แอลชอบแนวไซไฟอะ</template>
+	</category>
+	<category>
+		<pattern>ไม่ _ </pattern>
+		<that>แอลชอบแนวไซไฟอะ</that>
+		<template>งั้นทำงานไปนะ เราไปดูต่อล่ะ อิอิ</template>
+	</category>
+	<category>
+		<pattern>มาคุยเรื่อง ai กัน</pattern>
+		<template>โอเคจ้าา<set name="topic">ai</set></template>
+	</category>
+	<topic name="ai">
+		<category>
+			<pattern> * </pattern>
+			<template>วิชาๆนึงที่ทำให้คนงง อิอิ</template>
+		</category>
+		<category>
+			<pattern>ยาก</pattern>
+			<template>ไม่มีอะไรง่ายนะจ้ะ</template>
+		</category>
+	</topic>
+	<category>
+		<pattern>ฉันชื่อ * </pattern>
+		<template> <think><set name="nameUser"> * </set></think> </template>
+	</category>
+	<category>
+		<pattern>วันนี้เป็นไงมั่ง</pattern>
+		<template>
+			<condition name="state" value="happy">วันนี้สนุกจัง</condition>
+			<condition name="state" value="sad">วันนี้แย่จัง</condition>
+		</template>
+	</category>
+</aiml>
