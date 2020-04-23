@@ -1,19 +1,12 @@
 # -*- coding: utf-8 -*-
+
 import os
-# import google_translate
-from pythainlp import word_tokenize
 import codecs
-# from googletrans import Translator
+from pythainlp import word_tokenize
 from time import sleep
 
-def RepresentsInt(s):
-    try:
-        int(s)
-        return True
-    except ValueError:
-        return False
 
-def get_babi_raw(id, test_id,mode_f,dup):
+def get_babi_raw(id, test_id, mode_f):
     babi_map = {
         "1": "qa1_single-supporting-fact",
         "2": "qa2_two-supporting-facts",
@@ -60,45 +53,56 @@ def get_babi_raw(id, test_id,mode_f,dup):
         "sh20": "../shuffled/qa20_agents-motivations",
     }
     babi_name = babi_map[id]
-    path_in = '../data_translate/%s_%s_rewrite.txt' % (babi_name,mode_f)
-    path_out = '../data_translate/%s_%s_person_%s.txt' % (babi_name,mode_f,dup[0])
-    f = codecs.open(path_out, 'w',encoding='utf8')
-    f_in = codecs.open(path_in, 'r',encoding='utf8')
-
-    original_name = [u"แซนดรา",u"แมรี่",u"จอห์น",u"ดาเนียล",u"จูลี่",u"บิล",u"เฟร็ด"]
-    dict_val = {}
-    for i,name in enumerate(original_name):
-        dict_val[name] = dup[i]
+    path_in = '../data_translate_thirat/%s_%s.txt' % (babi_name, mode_f)
+    path_out = '../data_translate_thirat/%s_%s_person_place.txt' % (babi_name, mode_f)
+    f = codecs.open(path_out, 'w', encoding='utf8')
+    f_in = codecs.open(path_in, 'r', encoding='utf8')
 
     for i, line in enumerate(f_in):
         nlp_ploc = line
+        # edit name
         nlp_ploc = nlp_ploc.replace(u"แซ น ด ร้า", u"แซนดรา")
         nlp_ploc = nlp_ploc.replace(u"ดา เนีย ล", u"ดาเนียล ")
         nlp_ploc = nlp_ploc.replace(u"ออฟ ฟิต", u"ออฟฟิศ ")
         nlp_ploc = nlp_ploc.replace(u"ออฟ ฟิต", u"ออฟฟิศ ")
-        nlp_ploc = nlp_ploc.replace(u"สำนักงาน", u"ออฟฟิศ ")
         nlp_ploc = nlp_ploc.replace(u"ที่ทำงาน", u"ออฟฟิศ ")
-        nlp_ploc = nlp_ploc.replace(u"ห้องครัว", u"ครัว ")
         nlp_ploc = nlp_ploc.replace(u"ก ลับ", u"กลับ")
 
-        nlp_ploc = nlp_ploc.replace(u" \tที่",u" \tไม่")
-        nlp_ploc = nlp_ploc.replace(u" \tบางที",u" \tอาจจะ")
-        for j in range (0,len(nlp_ploc.split(" "))):
+        nlp_ploc = nlp_ploc.replace(u" \tที่", u" \tไม่")
+        nlp_ploc = nlp_ploc.replace(u" \tบางที", u" \tอาจจะ")
+
+        # name
+        nlp_ploc = nlp_ploc.replace(u"แซนดรา", u"มาค")
+        nlp_ploc = nlp_ploc.replace(u"แมรี่", u"ติ๋ม")
+        nlp_ploc = nlp_ploc.replace(u"จอห์น", u"เจ")
+        nlp_ploc = nlp_ploc.replace(u"ดาเนียล", u"โจ")
+        nlp_ploc = nlp_ploc.replace(u"จูลี่", u"โม")
+        nlp_ploc = nlp_ploc.replace(u"บิล", u"โบว")
+        nlp_ploc = nlp_ploc.replace(u"เฟร็ด", u"เฟิร์น")
+
+        # place
+        nlp_ploc = nlp_ploc.replace(u"ห้องโถง", u"ภูเก็ต")
+        nlp_ploc = nlp_ploc.replace(u"ห้องน้ำ", u"สงขลา")
+        nlp_ploc = nlp_ploc.replace(u"ห้องอาบน้ำ", u"พะเยา")
+        nlp_ploc = nlp_ploc.replace(u"ห้องครัว", u"สตูล")
+        nlp_ploc = nlp_ploc.replace(u"ครัว", u"สตูล")
+        nlp_ploc = nlp_ploc.replace(u"สวน", u"เชียงใหม่")
+        nlp_ploc = nlp_ploc.replace(u"ออฟฟิศ", u"เชียงราย")
+        nlp_ploc = nlp_ploc.replace(u"สำนักงาน", u"เชียงราย")
+        nlp_ploc = nlp_ploc.replace(u"ห้องนอน", u"อุบล")
+        nlp_ploc = nlp_ploc.replace(u"ลาน", u"กรุงเทพ")
+        nlp_ploc = nlp_ploc.replace(u"โรงเรียน", u"ตรัง")
+        nlp_ploc = nlp_ploc.replace(u"สวนสาธารณะ", u"เชียงใหม่")
+        nlp_ploc = nlp_ploc.replace(u"โรงภาพยนตร์", u"โรงหนัง")
+
+        for i in range(0, len(nlp_ploc.split(" "))):
             nlp_ploc = nlp_ploc.replace(u"  ", u" ")
         nlp_ploc = nlp_ploc.replace(u" ?", u"?")
         nlp_ploc = nlp_ploc.replace(u" .", u".")
-
-        for val in dict_val.keys():
-            nlp_ploc = nlp_ploc.replace(val,dict_val[val])
 
         f.write(nlp_ploc[:-1])
         f.write("\n")
         print(nlp_ploc)
 
-dup_name = [u"มาค",u"ติ๋ม",u"โจ",u"เจ",u"โม",u"โบว",u"เฟิร์น"]
-for d_name in range(0,len(dup_name)):
-    new_dup_seq = dup_name
-    temp = new_dup_seq[0]
-    del new_dup_seq[0]
-    new_dup_seq.append(temp)
-    print(get_babi_raw("10","10","train",new_dup_seq))
+
+print(get_babi_raw("10", "10", "test"))

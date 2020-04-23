@@ -1,11 +1,12 @@
 # Imports the Google Cloud client library
-from google import
+from google import translate
 
 # Instantiates a client
 translate_client = translate.Client()
 
 # The text to translate
 text = u'Hello, world!'
+
 # The target language
 target = 'ru'
 

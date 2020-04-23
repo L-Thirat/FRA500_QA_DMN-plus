@@ -13,33 +13,19 @@ def RepresentsInt(s):
     except ValueError:
         return False
 
-def loop_translate(ln):
-    num = ln.split(" ")[0]
-    out = "%s"%str(num)
-    translator = Translator()
-    if "?" in ln:
-        sentence=" ".join(ln.split("?")[0].split(" ")[1:])
-        out = out+ " " + translator.translate(sentence, dest='th').text
-        ans = ln.split("? \t")[1].split("\t")[0]
-        out = out+ "? \t" + translator.translate(ans, dest='th').text
-        ending = ln.split("? \t")[1].split("\t")[1]
-        out = out+ "\t" + ending
-    else:
-        sentence=" ".join(ln.split(" ")[1:])
-        out = out+ " " + translator.translate(sentence, dest='th').text + "."
-    print(out)
-    return out
-
-
 def translate_txt(ln):
+    # translator = google_translate.GoogleTranslator()
+    # out = translator.translate(ln, "thai")
     try:
-        out = loop_translate(ln)
+        translator = Translator()
+        out = translator.translate(ln, dest='th')
     except:
         print("waiting next loop..")
         sleep(60) # Time in seconds.
-        out = loop_translate(ln)
+        translator = Translator()
+        out = translator.translate(ln, dest='th')
     if out:
-        return u'%s'%out
+        return u'%s'%out.text
     else:
         print("waiting next out..")
         translate_txt(ln)
@@ -92,62 +78,46 @@ def get_babi_raw(id, test_id,mode_f):
     }
     babi_name = babi_map[id]
     path_train = '../data/en-10k/%s_%s.txt' % (babi_name,mode_f)
-    path_out = '../data_translate/%s_%s.txt' % (babi_name,mode_f)
+    path_out = '../data_translate_thirat/%s_%s.txt' % (babi_name,mode_f)
     f = codecs.open(path_out, 'w',encoding='utf8')
     for i, line in enumerate(open(path_train)):
-        text = translate_txt(line[:-1])
-        nlp_ploc = " ".join(word_tokenize(text, engine='newmm'))
-        print(nlp_ploc)
-        # asd
-        # # print(line)
-        # # print(proc)
-        # if '?' in line:
-        #     if RepresentsInt(proc[0]):
-        #         if RepresentsInt(proc[-1]):
-        #             print("a",(' '.join(proc[2:-4])))
-        #             if not RepresentsInt(proc[-3]):
-        #                 nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-4])) + " \t" + proc[-3] + "\t" + line.split("\t")[-1]
-        #             else:
-        #                 nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-4])).split("?")[0] + "? \t" + (' '.join(proc[2:-4])).split("?")[1].split(" ")[-1] + "\t" + line.split("\t")[-1]
-        #         else:
-        #             print("b")
-        #             if not RepresentsInt(proc[-3]):
-        #                 nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-2])) + " \t" + proc[-1] + "\t" + line.split("\t")[-1]
-        #             else:
-        #                 nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-2])).split("?")[0] + "? \t" + (' '.join(proc[2:-2])).split("?")[1].split(" ")[-1] + "\t" + line.split("\t")[-1]
-        #     else:
-        #         if RepresentsInt(proc[-1]):
-        #             if "?" not in proc:
-        #                 # print("hello")
-        #                 print("check c")
-        #                 if not RepresentsInt(proc[-3]):
-        #                     nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-4]))  + "? \t" + proc[-3] + "\t" + line.split("\t")[-1]
-        #                 else:
-        #                     print("check c--2")
-        #                     print(proc[:-4])
-        #                     nlp_ploc = line.split(" ")[0] + " " + ' '.join((' '.join(proc[:-4])).split(" ")[:-1])  + "? \t" + (' '.join(proc[:-4])).split(" ")[-1] + "\t" + line.split("\t")[-1]
-        #             else:
-        #                 # print("asd")
-        #                 print("d")
-        #                 if not RepresentsInt(proc[-3]):
-        #                     nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-4]))  + " \t" + proc[-3] + "\t" + line.split("\t")[-1]
-        #                 else:
-        #                     nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-4])).split("?")[0]  + "? \t" + (' '.join(proc[:-4])).split("?")[1].split(" ")[-1] + "\t" + line.split("\t")[-1]
-        #         else:
-        #             if "?" not in proc:
-        #                 print("e")
-        #                 nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-2]))  + "? \t" + proc[-1] + "\t" + line.split("\t")[-1]
-        #             else:
-        #                 print("f")
-        #                 nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-2]))  + " \t" + proc[-1] + "\t" + line.split("\t")[-1]
-        # else:
-        #     if RepresentsInt(proc[0]):
-        #         print(' '.join(proc[2:]))
-        #         nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[2:])) + "."
-        #     else:
-        #         nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc)) + "."
-        # if "\n" in nlp_ploc:
-        #     nlp_ploc = nlp_ploc[:-1]
+        text = translate_txt(line[:-2])
+        proc = word_tokenize(text, engine='newmm')
+        # print(line)
+        # print(proc)
+        if '?' in line:
+            if RepresentsInt(proc[0]):
+                if RepresentsInt(proc[-1]):
+                    print("a",(' '.join(proc[2:-4])))
+                    nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-4])) + " \t" + proc[-3] + "\t" + line.split("\t")[-1]
+                else:
+                    print("b")
+                    nlp_ploc = (''.join(proc[:2])) +(' '.join(proc[2:-2])) + " \t" + proc[-1] + "\t" + line.split("\t")[-1]
+            else:
+                if RepresentsInt(proc[-1]):
+                    if "?" not in proc:
+                        # print("hello")
+                        print("c")
+                        nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-4]))  + "? \t" + proc[-3] + "\t" + line.split("\t")[-1]
+                    else:
+                        # print("asd")
+                        print("d")
+                        nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-4]))  + " \t" + proc[-3] + "\t" + line.split("\t")[-1]
+                else:
+                    if "?" not in proc:
+                        print("e")
+                        nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-2]))  + "? \t" + proc[-1] + "\t" + line.split("\t")[-1]
+                    else:
+                        print("f")
+                        nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[:-2]))  + " \t" + proc[-1] + "\t" + line.split("\t")[-1]
+        else:
+            if RepresentsInt(proc[0]):
+                print(' '.join(proc[2:]))
+                nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc[2:])) + "."
+            else:
+                nlp_ploc = line.split(" ")[0] + " " + (' '.join(proc)) + "."
+        if "\n" in nlp_ploc:
+            nlp_ploc = nlp_ploc[:-1]
         # print proc
 
         nlp_ploc = nlp_ploc.replace(u" ?", u"?")
@@ -155,7 +125,6 @@ def get_babi_raw(id, test_id,mode_f):
         nlp_ploc = nlp_ploc.replace(u"Sandra  ", u"แซนดรา")
         nlp_ploc = nlp_ploc.replace(u"Daniel  ", u"ดาเนียล")
         nlp_ploc = nlp_ploc.replace(u"John  ", u"จอร์น")
-        nlp_ploc = nlp_ploc.replace(u"ดา เนีย ลก ลับ", u"ดาเนียล กลับ")
         nlp_ploc = nlp_ploc.replace(u"ดา เนียล", u"ดาเนียล")
         nlp_ploc = nlp_ploc.replace(u"ยอ ห์ น", u"จอห์น")
         nlp_ploc = nlp_ploc.replace(u"มา รี ย์", u"แมรี่")
@@ -173,16 +142,12 @@ def get_babi_raw(id, test_id,mode_f):
         nlp_ploc = nlp_ploc.replace(u"Julie", u"จูลี่")
         nlp_ploc = nlp_ploc.replace(u"จู ลี", u"จูลี่")
         nlp_ploc = nlp_ploc.replace(u"  ", u"")
-        nlp_ploc = nlp_ploc.replace(u" .", u".")
-        nlp_ploc = nlp_ploc.replace(u" \t ", u"\t")
-        nlp_ploc = nlp_ploc.replace(u"\t ", u" \t")
         nlp_ploc = nlp_ploc.replace(u"เจเจฟ", u"เจฟ")
         nlp_ploc = nlp_ploc.replace(u"??", u"?")
-        nlp_ploc = nlp_ploc.replace(u"..", u".")
 
 
         print(nlp_ploc)
         f.write((nlp_ploc))
         f.write('\n')
     # return babi_train_raw
-print(get_babi_raw("3","3","train"))
+print(get_babi_raw("10","10","train"))
