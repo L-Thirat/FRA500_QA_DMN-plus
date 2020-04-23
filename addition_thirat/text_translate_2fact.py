@@ -21,5 +21,5 @@ def get_babi_raw(id, test_id, mode_f):
         f.write(nlp_ploc)
         f.write('\n')
 
-
-print(get_babi_raw("3", "3", "train"))
+if __name__ == "__main__":
+    print(get_babi_raw("3", "3", "train"))

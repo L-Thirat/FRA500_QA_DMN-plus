@@ -98,7 +98,7 @@ python dmn_train.py --babi_task_id 2
 python dmn_test.py --babi_task_id 2
 โดยเราสามารถปรับ จำนวนรอบการ train ซึ่งอยู่ใน Experiment 1 ได้ที่ไฟล์ dmn_plut.py line 24>> max_epochs = 30
 
-# Experiment 3: re_data.py  For python 2.7
+# Experiment 3: cleaning_thai_dataset.py  For python 2.7
 เราใช้ไฟล์นี้ในการแปลงข้อมูลภาษาไทยเช่น ตัดคำสร้อย เปลี่ยนชื่อคน และชื่อสถานที่ ที่อยู่ใน test set ของ dataset bAbI ให้เป็นคำใหม่ที่ไม่เคยปรากฎอยู่ใน  training set เพื่อทดสอบว่าโมเดลจะสามารถทำงานได้ดีหรือไม่ภายใต้เงื่อนไขนี้ เพราะว่าในความเป็นจริงแล้วข้อมูลที่เกิดจาก user นั้นอาจมีคำใหม่ที่ไม่เคยพบมาก่อนในตอนที่ train
 ดังนั้นเราจึงใช้ไฟล์นี้ในการแปลงข้อมูลเหล่านั้นโดยการเลือก comment ในหัวข้อที่เราต้องการ
 - ตัดคำสร้อย line 109-134

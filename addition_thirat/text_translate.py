@@ -8,7 +8,14 @@ from core_nlp import NLPCore
 nlp_core = NLPCore()
 
 
-def get_babi_raw(id, test_id, mode_f):
+def translate_data(id, test_id, mode_f):
+    """Translate data
+
+    :param id: dataset id
+    :param test_id: test id
+    :param mode_f: ["train","test"] mode
+    :return: data translated
+    """
     babi_name = babi_map[id]
     path_train = '../data/en-10k/%s_%s.txt' % (babi_name, mode_f)
     path_out = '../data_translate_thirat/%s_%s.txt' % (babi_name, mode_f)
@@ -53,4 +60,5 @@ def get_babi_raw(id, test_id, mode_f):
         f.write('\n')
 
 
-print(get_babi_raw("10", "10", "train"))
+if __name__ == "__main__":
+    print(translate_data("10", "10", "train"))

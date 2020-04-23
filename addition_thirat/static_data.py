@@ -1,3 +1,7 @@
+"""
+BaBi dataset dictionary
+"""
+
 babi_map = {
     "1": "qa1_single-supporting-fact",
     "2": "qa2_two-supporting-facts",

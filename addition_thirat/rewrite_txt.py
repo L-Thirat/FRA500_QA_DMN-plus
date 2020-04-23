@@ -4,7 +4,14 @@ import codecs
 from static_data import babi_map
 
 
-def get_babi_raw(id, test_id, mode_f):
+def rewrite_test_set(id, test_id, mode_f):
+    """ Rewrite test set
+
+    :param id: dataset id
+    :param test_id: test id
+    :param mode_f: ["train","test"] mode
+    :return: None
+    """
     babi_name = babi_map[id]
     path_in = '../data_translate_thirat/%s_%s.txt' % (babi_name, mode_f)
     path_out = '../data_translate_thirat/%s_%s_rewrite.txt' % (babi_name, mode_f)
@@ -51,4 +58,5 @@ def get_babi_raw(id, test_id, mode_f):
             f.write(line1)
 
 
-print(get_babi_raw("2", "2", "test"))
+if __name__ == "__main__":
+    print(rewrite_test_set("2", "2", "test"))

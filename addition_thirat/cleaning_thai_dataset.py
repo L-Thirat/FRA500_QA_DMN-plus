@@ -6,7 +6,15 @@ from core_nlp import NLPCore
 
 nlp_core = NLPCore()
 
-def get_babi_raw(id, test_id, mode_f):
+
+def cleaning_thai_dataset(id, test_id, mode_f):
+    """Cleaning Thai dataset
+
+    :param id: data id
+    :param test_id: test id
+    :param mode_f: ["train","test"] mode
+    :return: None
+    """
     babi_name = babi_map[id]
     path_in = '../data_translate_thirat/%s_%s.txt' % (babi_name, mode_f)
     path_out = '../data_translate_thirat/%s_%s_person_place.txt' % (babi_name, mode_f)
@@ -15,7 +23,7 @@ def get_babi_raw(id, test_id, mode_f):
 
     for i, line in enumerate(f_in):
         nlp_ploc = line
-        nlp_ploc = (nlp_ploc)
+        nlp_ploc = nlp_ploc
 
         for i in range(0, len(nlp_ploc.split(" "))):
             nlp_ploc = nlp_ploc.replace(u"  ", u" ")
@@ -27,4 +35,4 @@ def get_babi_raw(id, test_id, mode_f):
         f.write("\n")
 
 
-print(get_babi_raw("10", "10", "test"))
+print(cleaning_thai_dataset("10", "10", "test"))

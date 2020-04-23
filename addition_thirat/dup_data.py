@@ -7,13 +7,13 @@ from static_data import babi_map
 nlp_core = NLPCore()
 
 
-def get_babi_raw(id, test_id, mode_f, dup):
-    """create babi dataset in Thai language
+def duplicate_training_set(id, test_id, mode_f, dup):
+    """Generate new training set by duplicate and replace name
 
-    :param id: data id
+    :param id: dataset id
     :param test_id: test id
     :param mode_f: ["train","test"] mode
-    :param dup: name of duplicate data
+    :param dup: set of data replaced
     :return:
     """
     babi_name = babi_map[id]
@@ -37,9 +37,11 @@ def get_babi_raw(id, test_id, mode_f, dup):
         f.write("\n")
 
 
-dup_name = [u"มาค", u"ติ๋ม", u"โจ", u"เจ", u"โม", u"โบว", u"เฟิร์น"]
-for d_name in range(0, len(dup_name)):
-    new_dup_seq = dup_name
-    temp = new_dup_seq[0]
-    del new_dup_seq[0]
-    new_dup_seq.append(temp)
+if __name__ == "__main__":
+    dup_name = [u"มาค", u"ติ๋ม", u"โจ", u"เจ", u"โม", u"โบว", u"เฟิร์น"]
+    for d_name in range(0, len(dup_name)):
+        new_dup_seq = dup_name
+        temp = new_dup_seq[0]
+        del new_dup_seq[0]
+        new_dup_seq.append(temp)
+    duplicate_training_set("2", "2", "train", new_dup_seq)
