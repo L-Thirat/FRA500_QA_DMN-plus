@@ -1,5 +1,8 @@
 # coding=utf-8
 
+from time import sleep
+from googletrans import Translator
+
 
 class NLPCore:
     def __init__(self):
@@ -18,7 +21,7 @@ class NLPCore:
         except ValueError:
             return False
 
-    def translate_txt(self,txt):
+    def translate_txt(self, txt):
         """Translation pipeline
 
         :param txt: text
@@ -34,7 +37,7 @@ class NLPCore:
             return u'%s' % output
         else:
             print("waiting next output..")
-            translate_txt(txt)
+            self.translate_txt(txt)
 
     @staticmethod
     def loop_translate(txt):
@@ -60,6 +63,11 @@ class NLPCore:
 
     @staticmethod
     def transform_name(nlp_ploc):
+        """text transforming (direct meaning)
+
+        :param nlp_ploc: text
+        :return: text transformed
+        """
         nlp_ploc = nlp_ploc.replace(u"แซ น ด ร้า", u"แซนดรา")
         nlp_ploc = nlp_ploc.replace(u"ดา เนีย ล", u"ดาเนียล ")
         nlp_ploc = nlp_ploc.replace(u"ออฟ ฟิต", u"ออฟฟิศ ")
@@ -104,6 +112,11 @@ class NLPCore:
 
     @staticmethod
     def transform_name_training(nlp_ploc):
+        """text transforming (for add training dataset)
+
+        :param nlp_ploc: text
+        :return: text transformed
+        """
         # edit name
         nlp_ploc = nlp_ploc.replace(u"แซ น ด ร้า", u"แซนดรา")
         nlp_ploc = nlp_ploc.replace(u"ดา เนีย ล", u"ดาเนียล ")

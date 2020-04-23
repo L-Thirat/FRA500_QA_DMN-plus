@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import os
-import google_translate
 import codecs
-from googletrans import Translator
-from pythainlp import word_tokenize
-from time import sleep
-from core_nlp import translate_txt
 from static_data import babi_map
 
 

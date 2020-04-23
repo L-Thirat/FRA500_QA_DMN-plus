@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
 
-import os
 import codecs
-from pythainlp import word_tokenize
-from time import sleep
 from static_data import babi_map
-from core_nlp import transform_name_training
+from core_nlp import NLPCore
 
+nlp_core = NLPCore()
 
 def get_babi_raw(id, test_id, mode_f):
     babi_name = babi_map[id]
@@ -24,6 +21,7 @@ def get_babi_raw(id, test_id, mode_f):
             nlp_ploc = nlp_ploc.replace(u"  ", u" ")
         nlp_ploc = nlp_ploc.replace(u" ?", u"?")
         nlp_ploc = nlp_ploc.replace(u" .", u".")
+        nlp_ploc = nlp_core.transform_name_training(nlp_ploc)
 
         f.write(nlp_ploc[:-1])
         f.write("\n")

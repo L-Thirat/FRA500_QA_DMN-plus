@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-\
 
-import os
 import codecs
-from time import sleep
-from pythainlp import word_tokenize
-from core_nlp.NLPCore import transform_name, represent_int
+from core_nlp import NLPCore
 from static_data import babi_map
+
+nlp_core = NLPCore()
 
 
 def get_babi_raw(id, test_id, mode_f, dup):
@@ -30,7 +29,7 @@ def get_babi_raw(id, test_id, mode_f, dup):
 
     for i, line in enumerate(f_in):
         nlp_ploc = line
-        nlp_ploc = transform_name(nlp_ploc)
+        nlp_ploc = nlp_core.transform_name(nlp_ploc)
         for val in dict_val.keys():
             nlp_ploc = nlp_ploc.replace(val, dict_val[val])
 
