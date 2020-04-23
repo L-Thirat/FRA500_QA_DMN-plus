@@ -8,7 +8,7 @@ translate_client = translate.Client()
 text = u'Hello, world!'
 
 # The target language
-target = 'ru'
+target = 'th'
 
 # Translates some text into Russian
 translation = translate_client.translate(
