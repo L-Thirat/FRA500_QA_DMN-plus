@@ -8,7 +8,7 @@ from core_nlp import NLPCore
 nlp_core = NLPCore()
 
 
-def get_babi_raw(id, test_id, mode_f):
+def translate_data_2factor(id, test_id, mode_f):
     babi_name = babi_map[id]
     path_train = '../data/en-10k/%s_%s.txt' % (babi_name, mode_f)
     path_output = '../data_translate_thirat/%s_%s.txt' % (babi_name, mode_f)
@@ -21,5 +21,6 @@ def get_babi_raw(id, test_id, mode_f):
         f.write(nlp_ploc)
         f.write('\n')
 
+
 if __name__ == "__main__":
-    print(get_babi_raw("3", "3", "train"))
+    print(translate_data_2factor("3", "3", "train"))

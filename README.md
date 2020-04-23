@@ -72,7 +72,7 @@ bAbI dataset (Task 1,2,5,6,10,12,14,17)
 ### text_translate_2fact.py  For python 2.7
 This file is use to convert data set bAbI in English to Thai
 สามารถเลือก data set ที่ต้องการจะรันด้วยการเปลี่ยน parameter ในบรรทัดสุดท้าย
->> get_babi_raw("3","3","train")
+>> translate_data_2factor("3","3","train")
 โดยที่พารามิเตอร์ตัวแรก คือ training set
 ตัวที่สอง คือ test set
 ตัวที่สาม คือ ชุดข้อมูลในการรัน ("train" / "test")
@@ -106,9 +106,9 @@ python dmn_test.py --babi_task_id 2
 - ตัดคำสร้อย line 109-134
 - แปลงชื่อคน line 100-107
 - แปลงสรถานที่ line 136-150
-จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (get_babi_raw("10","10","test"))
+จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (cleaning_thai_dataset("10","10","test"))
 
 ### Experiment 4: dup_data.py  For python 2.7
 สำหรับการทดลองนี้เราต้องการที่จะเพิ่มประสิทธิภาพในปัญหาจากการทดลองที่ 3 ให้ดีขึ้น ด้วยการเพิ่มชื่อคนที่ปรากฎใน test set ลงใน training set เพื่อให้ระบบได้เรียน word vector ที่เกิดขึ้นใน test set ทั้งหมด โดยการคัดลอกไฟล์ (dupplicate) bAbI dataset ด้วยชื่อคนต่างๆที่เกิดขึ้นตาม test set ทุกกรณี จากนั้นำทุกไฟล์ที่ได้มา concatenate  เพื่อสร้างไฟล์ trainning set ที่คลุมรายชื่อที่เราแก้ไขใน test set มากขึ้น 
-จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (get_babi_raw("10","10","train",new_dup_seq))
+จากนั้นจึงเลือก dataset ที่เราต้องการในบรรทัดสุดท้าย (duplicate_training_set("10","10","train",new_dup_seq))
 โดยที่ new_dup_seq เป็น list ของรายชื่อคนที่ปรากฎใน test set
